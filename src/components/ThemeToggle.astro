@@ -1,13 +1,16 @@
 ---
 import { Moon, Sun } from "lucide-react";
-import { Button } from "@/components/ui/button";
 ---
 
-<Button variant="ghost" size="icon" id="themeToggle">
-  <Sun id="sunIcon" className="size-6" />
+<button
+  id="themeToggle"
+  class="p-2 rounded-lg text-zinc-700 dark:text-zinc-300 hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-colors"
+  aria-label="Toggle theme"
+>
+  <Sun id="sunIcon" className="size-5" />
   <Moon id="moonIcon" className="size-5 hidden" />
   <span class="sr-only">Toggle theme</span>
-</Button>
+</button>
 
 <script is:inline>
   const setInitialTheme = () => {

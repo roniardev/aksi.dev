@@ -1,30 +1,51 @@
 ---
 import ThemeToggle from "@/components/ThemeToggle.astro";
-import { buttonVariants } from "@/components/ui/button";
 ---
 
 <header
-  class="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-backdrop-filter:bg-background/60"
+  class="sticky top-0 z-50 w-full bg-white/80 dark:bg-zinc-950/80 backdrop-blur-xl border-b border-zinc-200 dark:border-zinc-800"
 >
-  <div class="px-4 mx-auto flex py-3 items-center justify-between">
-    <a
-      href="/"
-      class="flex items-center gap-2 text-lg font-black"
-      aria-label="Homepage"
-    >
-      <span>aksi.dev</span>
-    </a>
-
-    <nav class="flex items-center gap-2">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex items-center justify-between h-12">
+      <!-- Logo -->
       <a
-        href="https://github.com/area44/astro-shadcn-ui-template"
-        target="_blank"
-        rel="noopener noreferrer"
-        class={buttonVariants({ variant: "ghost" })}
+        href="/"
+        class="text-xl font-semibold text-zinc-900 dark:text-white hover:text-zinc-700 dark:hover:text-zinc-300 transition-colors"
+        aria-label="Homepage"
       >
-        GitHub
+        aksi.dev
       </a>
-      <ThemeToggle />
-    </nav>
+
+      <!-- Navigation -->
+      <nav class="flex items-center gap-8">
+        <a
+          href="#"
+          class="text-sm text-zinc-700 dark:text-zinc-300 hover:text-zinc-900 dark:hover:text-white transition-colors"
+        >
+          Product
+        </a>
+        <a
+          href="#"
+          class="text-sm text-zinc-700 dark:text-zinc-300 hover:text-zinc-900 dark:hover:text-white transition-colors"
+        >
+          Features
+        </a>
+        <a
+          href="#"
+          class="text-sm text-zinc-700 dark:text-zinc-300 hover:text-zinc-900 dark:hover:text-white transition-colors"
+        >
+          Pricing
+        </a>
+        <a
+          href="https://github.com/roniardev/aksi.dev"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="text-sm text-zinc-700 dark:text-zinc-300 hover:text-zinc-900 dark:hover:text-white transition-colors"
+        >
+          GitHub
+        </a>
+        <ThemeToggle />
+      </nav>
+    </div>
   </div>
 </header>
