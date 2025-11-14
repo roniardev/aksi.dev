@@ -1,30 +1,122 @@
 ---
-import ThemeToggle from "@/components/ThemeToggle.astro";
 import { buttonVariants } from "@/components/ui/button";
 ---
 
 <header
-  class="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-backdrop-filter:bg-background/60"
+  class="sticky top-0 z-50 w-full border-b bg-white/95 backdrop-blur supports-backdrop-filter:bg-white/60"
 >
-  <div class="px-4 mx-auto flex py-3 items-center justify-between">
+  <div class="container px-4 mx-auto flex py-4 items-center justify-between">
     <a
       href="/"
-      class="flex items-center gap-2 text-lg font-black"
+      class="flex items-center gap-2 text-xl font-black text-gray-900"
       aria-label="Homepage"
     >
       <span>aksi.dev</span>
     </a>
 
-    <nav class="flex items-center gap-2">
+    <nav class="hidden md:flex items-center gap-6">
       <a
-        href="https://github.com/area44/astro-shadcn-ui-template"
+        href="/"
+        class="text-sm font-medium text-gray-700 hover:text-gray-900 transition-colors"
+      >
+        Home
+      </a>
+      <a
+        href="/catalog"
+        class="text-sm font-medium text-gray-700 hover:text-gray-900 transition-colors"
+      >
+        Catalog
+      </a>
+      <a
+        href="/products"
+        class="text-sm font-medium text-gray-700 hover:text-gray-900 transition-colors"
+      >
+        Products
+      </a>
+      <a
+        href="/about"
+        class="text-sm font-medium text-gray-700 hover:text-gray-900 transition-colors"
+      >
+        About
+      </a>
+      <a
+        href="/contact"
+        class="text-sm font-medium text-gray-700 hover:text-gray-900 transition-colors"
+      >
+        Contact
+      </a>
+      <a
+        href="https://github.com/roniardev"
         target="_blank"
         rel="noopener noreferrer"
-        class={buttonVariants({ variant: "ghost" })}
+        class={buttonVariants({ variant: "default", size: "sm" })}
       >
         GitHub
       </a>
-      <ThemeToggle />
+    </nav>
+
+    <!-- Mobile menu button -->
+    <button
+      id="mobile-menu-button"
+      class="md:hidden p-2 text-gray-700"
+      aria-label="Toggle menu"
+    >
+      <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+      </svg>
+    </button>
+  </div>
+
+  <!-- Mobile menu -->
+  <div id="mobile-menu" class="hidden md:hidden border-t bg-white">
+    <nav class="container px-4 py-4 flex flex-col gap-3">
+      <a
+        href="/"
+        class="text-sm font-medium text-gray-700 hover:text-gray-900 py-2"
+      >
+        Home
+      </a>
+      <a
+        href="/catalog"
+        class="text-sm font-medium text-gray-700 hover:text-gray-900 py-2"
+      >
+        Catalog
+      </a>
+      <a
+        href="/products"
+        class="text-sm font-medium text-gray-700 hover:text-gray-900 py-2"
+      >
+        Products
+      </a>
+      <a
+        href="/about"
+        class="text-sm font-medium text-gray-700 hover:text-gray-900 py-2"
+      >
+        About
+      </a>
+      <a
+        href="/contact"
+        class="text-sm font-medium text-gray-700 hover:text-gray-900 py-2"
+      >
+        Contact
+      </a>
+      <a
+        href="https://github.com/roniardev"
+        target="_blank"
+        rel="noopener noreferrer"
+        class={buttonVariants({ variant: "default", size: "sm" })}
+      >
+        GitHub
+      </a>
     </nav>
   </div>
 </header>
+
+<script>
+  const button = document.getElementById('mobile-menu-button');
+  const menu = document.getElementById('mobile-menu');
+
+  button?.addEventListener('click', () => {
+    menu?.classList.toggle('hidden');
+  });
+</script>

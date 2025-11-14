@@ -4,12 +4,245 @@ import BaseLayout from "@/layouts/BaseLayout.astro";
 ---
 
 <BaseLayout
-  title="Akselerasi"
-  description="Akselerasi"
+  title="Akselerasi - Professional Printing & Graphics"
+  description="Your trusted partner for premium printing and graphics solutions"
 >
-  <section
-    class="container px-4 mx-auto grid items-center gap-6 pt-6 pb-8 md:py-10"
-  >
-    Coming soon...
+  <!-- Hero Section -->
+  <section class="relative bg-gradient-to-br from-blue-600 via-blue-700 to-blue-800 text-white py-20 md:py-32">
+    <div class="container px-4 mx-auto">
+      <div class="max-w-4xl mx-auto text-center">
+        <h1 class="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight">
+          Professional Printing<br />& Graphics Solutions
+        </h1>
+        <p class="text-xl md:text-2xl text-blue-100 mb-10 max-w-2xl mx-auto">
+          From business cards to large format displays, we bring your vision to life with exceptional quality and service
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <a
+            href="/catalog"
+            class={buttonVariants({ variant: "secondary", size: "lg" })}
+          >
+            Browse Catalog
+          </a>
+          <a
+            href="/contact"
+            class={buttonVariants({ variant: "outline", size: "lg", className: "bg-transparent text-white border-white hover:bg-white hover:text-blue-600" })}
+          >
+            Get a Quote
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- Decorative Elements -->
+    <div class="absolute bottom-0 left-0 right-0 h-16 bg-gradient-to-t from-white to-transparent"></div>
+  </section>
+
+  <!-- Services Section -->
+  <section class="py-16 md:py-24 bg-white">
+    <div class="container px-4 mx-auto">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+          Our Services
+        </h2>
+        <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+          Comprehensive printing and graphics solutions for all your business needs
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="group bg-white border border-gray-200 rounded-xl p-8 hover:shadow-xl transition-all duration-300">
+          <div class="w-14 h-14 bg-blue-100 rounded-lg flex items-center justify-center mb-6 group-hover:bg-blue-600 transition-colors">
+            <svg class="w-7 h-7 text-blue-600 group-hover:text-white transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold text-gray-900 mb-3">Business Printing</h3>
+          <p class="text-gray-600 mb-4">
+            Professional business cards, letterheads, and stationery that make a lasting impression
+          </p>
+          <a href="/products" class="text-blue-600 font-medium hover:text-blue-700 inline-flex items-center">
+            Learn more
+            <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+            </svg>
+          </a>
+        </div>
+
+        <div class="group bg-white border border-gray-200 rounded-xl p-8 hover:shadow-xl transition-all duration-300">
+          <div class="w-14 h-14 bg-blue-100 rounded-lg flex items-center justify-center mb-6 group-hover:bg-blue-600 transition-colors">
+            <svg class="w-7 h-7 text-blue-600 group-hover:text-white transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold text-gray-900 mb-3">Marketing Materials</h3>
+          <p class="text-gray-600 mb-4">
+            Brochures, flyers, and postcards designed to effectively promote your business
+          </p>
+          <a href="/products" class="text-blue-600 font-medium hover:text-blue-700 inline-flex items-center">
+            Learn more
+            <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+            </svg>
+          </a>
+        </div>
+
+        <div class="group bg-white border border-gray-200 rounded-xl p-8 hover:shadow-xl transition-all duration-300">
+          <div class="w-14 h-14 bg-blue-100 rounded-lg flex items-center justify-center mb-6 group-hover:bg-blue-600 transition-colors">
+            <svg class="w-7 h-7 text-blue-600 group-hover:text-white transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold text-gray-900 mb-3">Large Format</h3>
+          <p class="text-gray-600 mb-4">
+            Eye-catching banners, posters, and vehicle wraps for maximum visibility
+          </p>
+          <a href="/products" class="text-blue-600 font-medium hover:text-blue-700 inline-flex items-center">
+            Learn more
+            <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+            </svg>
+          </a>
+        </div>
+
+        <div class="group bg-white border border-gray-200 rounded-xl p-8 hover:shadow-xl transition-all duration-300">
+          <div class="w-14 h-14 bg-blue-100 rounded-lg flex items-center justify-center mb-6 group-hover:bg-blue-600 transition-colors">
+            <svg class="w-7 h-7 text-blue-600 group-hover:text-white transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 4v16M17 4v16M3 8h4m10 0h4M3 12h18M3 16h4m10 0h4M4 20h16a1 1 0 001-1V5a1 1 0 00-1-1H4a1 1 0 00-1 1v14a1 1 0 001 1z"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold text-gray-900 mb-3">Signage Solutions</h3>
+          <p class="text-gray-600 mb-4">
+            Custom indoor and outdoor signs to guide and inform your customers
+          </p>
+          <a href="/products" class="text-blue-600 font-medium hover:text-blue-700 inline-flex items-center">
+            Learn more
+            <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+            </svg>
+          </a>
+        </div>
+
+        <div class="group bg-white border border-gray-200 rounded-xl p-8 hover:shadow-xl transition-all duration-300">
+          <div class="w-14 h-14 bg-blue-100 rounded-lg flex items-center justify-center mb-6 group-hover:bg-blue-600 transition-colors">
+            <svg class="w-7 h-7 text-blue-600 group-hover:text-white transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold text-gray-900 mb-3">Trade Show & Events</h3>
+          <p class="text-gray-600 mb-4">
+            Professional displays and materials that help you stand out at any event
+          </p>
+          <a href="/products" class="text-blue-600 font-medium hover:text-blue-700 inline-flex items-center">
+            Learn more
+            <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+            </svg>
+          </a>
+        </div>
+
+        <div class="group bg-white border border-gray-200 rounded-xl p-8 hover:shadow-xl transition-all duration-300">
+          <div class="w-14 h-14 bg-blue-100 rounded-lg flex items-center justify-center mb-6 group-hover:bg-blue-600 transition-colors">
+            <svg class="w-7 h-7 text-blue-600 group-hover:text-white transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v13m0-13V6a2 2 0 112 2h-2zm0 0V5.5A2.5 2.5 0 109.5 8H12zm-7 4h14M5 12a2 2 0 110-4h14a2 2 0 110 4M5 12v7a2 2 0 002 2h10a2 2 0 002-2v-7"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold text-gray-900 mb-3">Promotional Products</h3>
+          <p class="text-gray-600 mb-4">
+            Branded merchandise that keeps your business top of mind
+          </p>
+          <a href="/products" class="text-blue-600 font-medium hover:text-blue-700 inline-flex items-center">
+            Learn more
+            <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Choose Us -->
+  <section class="py-16 md:py-24 bg-gray-50">
+    <div class="container px-4 mx-auto">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div>
+          <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+            Why Choose Akselerasi?
+          </h2>
+          <p class="text-lg text-gray-600 mb-8">
+            We combine cutting-edge technology with expert craftsmanship to deliver exceptional results for every project.
+          </p>
+          <div class="space-y-6">
+            <div class="flex gap-4">
+              <div class="w-12 h-12 bg-blue-600 rounded-lg flex items-center justify-center flex-shrink-0">
+                <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                </svg>
+              </div>
+              <div>
+                <h3 class="text-lg font-bold text-gray-900 mb-1">Premium Quality</h3>
+                <p class="text-gray-600">State-of-the-art equipment and premium materials ensure the best results</p>
+              </div>
+            </div>
+            <div class="flex gap-4">
+              <div class="w-12 h-12 bg-blue-600 rounded-lg flex items-center justify-center flex-shrink-0">
+                <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                </svg>
+              </div>
+              <div>
+                <h3 class="text-lg font-bold text-gray-900 mb-1">Fast Turnaround</h3>
+                <p class="text-gray-600">Quick production times without compromising on quality</p>
+              </div>
+            </div>
+            <div class="flex gap-4">
+              <div class="w-12 h-12 bg-blue-600 rounded-lg flex items-center justify-center flex-shrink-0">
+                <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 10h4.764a2 2 0 011.789 2.894l-3.5 7A2 2 0 0115.263 21h-4.017c-.163 0-.326-.02-.485-.06L7 20m7-10V5a2 2 0 00-2-2h-.095c-.5 0-.905.405-.905.905 0 .714-.211 1.412-.608 2.006L7 11v9m7-10h-2M7 20H5a2 2 0 01-2-2v-6a2 2 0 012-2h2.5"></path>
+                </svg>
+              </div>
+              <div>
+                <h3 class="text-lg font-bold text-gray-900 mb-1">Expert Support</h3>
+                <p class="text-gray-600">Professional design assistance and dedicated customer service</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="aspect-[4/3] rounded-xl overflow-hidden">
+          <img
+            src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=800&h=600&fit=crop"
+            alt="Professional printing services"
+            class="w-full h-full object-cover"
+            loading="lazy"
+          />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="py-16 md:py-24 bg-gradient-to-r from-blue-600 to-blue-700 text-white">
+    <div class="container px-4 mx-auto text-center">
+      <h2 class="text-3xl md:text-4xl font-bold mb-6">
+        Ready to Bring Your Vision to Life?
+      </h2>
+      <p class="text-lg text-blue-100 max-w-2xl mx-auto mb-8">
+        Let's discuss your project and create something amazing together
+      </p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a
+          href="/contact"
+          class={buttonVariants({ variant: "secondary", size: "lg" })}
+        >
+          Get Started
+        </a>
+        <a
+          href="/catalog"
+          class={buttonVariants({ variant: "outline", size: "lg", className: "bg-transparent text-white border-white hover:bg-white hover:text-blue-600" })}
+        >
+          View Our Work
+        </a>
+      </div>
+    </div>
   </section>
 </BaseLayout>

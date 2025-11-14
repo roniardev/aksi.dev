@@ -1,0 +1,159 @@
+---
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import { buttonVariants } from "@/components/ui/button";
+
+const productCategories = [
+  {
+    title: "Business Printing",
+    items: ["Business Cards", "Letterheads", "Envelopes", "Folders", "Stationery Sets"],
+    image: "https://images.unsplash.com/photo-1554224311-beee4ece0933?w=600&h=400&fit=crop"
+  },
+  {
+    title: "Marketing Materials",
+    items: ["Brochures", "Flyers", "Postcards", "Catalogs", "Sales Sheets"],
+    image: "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=600&h=400&fit=crop"
+  },
+  {
+    title: "Large Format Printing",
+    items: ["Banners", "Posters", "Vehicle Wraps", "Wall Graphics", "Floor Graphics"],
+    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=400&fit=crop"
+  },
+  {
+    title: "Signage Solutions",
+    items: ["Indoor Signs", "Outdoor Signs", "Channel Letters", "Monument Signs", "Wayfinding"],
+    image: "https://images.unsplash.com/photo-1497366754035-f200968a6e72?w=600&h=400&fit=crop"
+  },
+  {
+    title: "Trade Show & Events",
+    items: ["Pop-up Displays", "Retractable Banners", "Table Covers", "Backdrops", "Booth Graphics"],
+    image: "https://images.unsplash.com/photo-1475721027785-f74eccf877e2?w=600&h=400&fit=crop"
+  },
+  {
+    title: "Promotional Products",
+    items: ["Branded Apparel", "Drinkware", "Tech Items", "Office Supplies", "Custom Gifts"],
+    image: "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=600&h=400&fit=crop"
+  }
+];
+---
+
+<BaseLayout
+  title="Products - Akselerasi"
+  description="Discover our full range of printing and graphics products"
+>
+  <!-- Hero Section -->
+  <section class="bg-gradient-to-b from-blue-50 to-white py-16 md:py-24">
+    <div class="container px-4 mx-auto text-center">
+      <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6">
+        Our Products
+      </h1>
+      <p class="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto">
+        From business essentials to large format displays, we offer comprehensive printing and graphics solutions for every need
+      </p>
+    </div>
+  </section>
+
+  <!-- Products Grid -->
+  <section class="py-12 md:py-20 bg-white">
+    <div class="container px-4 mx-auto">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
+        {productCategories.map((category, index) => (
+          <div class="bg-white border border-gray-200 rounded-xl overflow-hidden hover:shadow-2xl transition-all duration-300">
+            <div class="aspect-[3/2] overflow-hidden">
+              <img
+                src={category.image}
+                alt={category.title}
+                class="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                loading="lazy"
+              />
+            </div>
+            <div class="p-6 md:p-8">
+              <h3 class="text-2xl font-bold text-gray-900 mb-4">
+                {category.title}
+              </h3>
+              <ul class="space-y-2 mb-6">
+                {category.items.map((item) => (
+                  <li class="flex items-center text-gray-600">
+                    <svg class="w-5 h-5 text-blue-600 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                    </svg>
+                    {item}
+                  </li>
+                ))}
+              </ul>
+              <a
+                href="/catalog"
+                class={buttonVariants({ variant: "default", className: "w-full" })}
+              >
+                Browse {category.title}
+              </a>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section class="py-16 md:py-20 bg-gray-50">
+    <div class="container px-4 mx-auto">
+      <h2 class="text-3xl md:text-4xl font-bold text-center text-gray-900 mb-12">
+        Why Choose Us
+      </h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="text-center">
+          <div class="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center mx-auto mb-4">
+            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold text-gray-900 mb-2">Premium Quality</h3>
+          <p class="text-gray-600">Highest quality materials and printing technology</p>
+        </div>
+        <div class="text-center">
+          <div class="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center mx-auto mb-4">
+            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold text-gray-900 mb-2">Fast Turnaround</h3>
+          <p class="text-gray-600">Quick production times without compromising quality</p>
+        </div>
+        <div class="text-center">
+          <div class="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center mx-auto mb-4">
+            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold text-gray-900 mb-2">Expert Support</h3>
+          <p class="text-gray-600">Professional design assistance and customer service</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="py-16 md:py-24 bg-gradient-to-r from-blue-600 to-blue-700 text-white">
+    <div class="container px-4 mx-auto text-center">
+      <h2 class="text-3xl md:text-4xl font-bold mb-6">
+        Ready to Get Started?
+      </h2>
+      <p class="text-lg text-blue-100 max-w-2xl mx-auto mb-8">
+        Contact us today to discuss your project and get a free quote
+      </p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a
+          href="/catalog"
+          class={buttonVariants({ variant: "secondary", size: "lg" })}
+        >
+          View Catalog
+        </a>
+        <a
+          href="/contact"
+          class={buttonVariants({ variant: "outline", size: "lg", className: "bg-white text-blue-600 border-white hover:bg-blue-50" })}
+        >
+          Contact Us
+        </a>
+      </div>
+    </div>
+  </section>
+</BaseLayout>
