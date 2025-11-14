@@ -8,10 +8,10 @@ import BaseLayout from "@/layouts/BaseLayout.astro";
   description="Accelerate your digital presence with cutting-edge solutions"
 >
   <!-- Hero Section -->
-  <section class="relative w-full bg-white dark:bg-zinc-950 py-16 md:py-24 lg:py-32">
+  <section class="relative w-full min-h-screen bg-white dark:bg-zinc-950 flex items-center justify-center">
     <div class="container px-4 mx-auto text-center">
-      <h1 class="text-5xl md:text-6xl lg:text-7xl font-semibold tracking-tight text-zinc-900 dark:text-white mb-4">
-        aksi<span class="text-zinc-600 dark:text-zinc-400">.dev</span>
+      <h1 class="text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight text-zinc-900 dark:text-white mb-4">
+        aksi<span class="text-yellow-500">.dev</span>
       </h1>
       <p class="text-xl md:text-2xl lg:text-3xl text-zinc-600 dark:text-zinc-400 mb-8 max-w-3xl mx-auto">
         Freelance Developer • Creating Digital Excellence
@@ -19,25 +19,25 @@ import BaseLayout from "@/layouts/BaseLayout.astro";
       <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
         <a
           href="#projects"
-          class="text-blue-600 dark:text-blue-400 hover:underline text-lg font-medium transition-colors"
+          class="px-8 py-3 bg-yellow-500 text-zinc-900 rounded-full font-semibold hover:bg-yellow-400 transition-colors"
         >
-          View Projects →
+          View Projects
         </a>
         <a
           href="#contact"
-          class="text-blue-600 dark:text-blue-400 hover:underline text-lg font-medium transition-colors"
+          class="px-8 py-3 border-2 border-zinc-900 dark:border-white text-zinc-900 dark:text-white rounded-full font-semibold hover:bg-zinc-900 hover:text-white dark:hover:bg-white dark:hover:text-zinc-900 transition-colors"
         >
-          Get in touch →
+          Get in touch
         </a>
       </div>
     </div>
   </section>
 
   <!-- Projects Section -->
-  <section id="projects" class="relative w-full bg-zinc-50 dark:bg-zinc-900 py-16 md:py-24 overflow-hidden">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+  <section id="projects" class="relative w-full min-h-screen bg-stone-100 dark:bg-zinc-900 flex items-center justify-center overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full py-16">
       <div class="text-center mb-12">
-        <h2 class="text-4xl md:text-5xl lg:text-6xl font-semibold tracking-tight text-zinc-900 dark:text-white mb-4">
+        <h2 class="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-zinc-900 dark:text-white mb-4">
           Featured Projects
         </h2>
         <p class="text-lg md:text-xl text-zinc-600 dark:text-zinc-400 max-w-2xl mx-auto">
@@ -48,26 +48,26 @@ import BaseLayout from "@/layouts/BaseLayout.astro";
       <!-- Slider Container -->
       <div class="relative">
         <!-- Projects Slider -->
-        <div id="projectsSlider" class="flex gap-6 transition-transform duration-500">
+        <div id="projectsSlider" class="flex gap-6">
           <!-- Project 1 -->
-          <div class="project-slide min-w-full md:min-w-[calc(50%-12px)] lg:min-w-[calc(33.333%-16px)]">
-            <div class="bg-white dark:bg-zinc-800 rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow">
-              <div class="aspect-video bg-gradient-to-br from-blue-500 to-purple-600 flex items-center justify-center">
-                <span class="text-white text-4xl font-bold">E-Commerce</span>
+          <div class="project-slide min-w-[calc(50%-12px)] flex-shrink-0">
+            <div class="bg-white dark:bg-zinc-800 rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-shadow h-full">
+              <div class="aspect-video bg-gradient-to-br from-yellow-400 to-yellow-500 flex items-center justify-center">
+                <span class="text-zinc-900 text-4xl font-bold">E-Commerce</span>
               </div>
               <div class="p-6">
-                <h3 class="text-2xl font-semibold text-zinc-900 dark:text-white mb-2">
+                <h3 class="text-2xl font-bold text-zinc-900 dark:text-white mb-2">
                   Modern E-Commerce Platform
                 </h3>
                 <p class="text-zinc-600 dark:text-zinc-400 mb-4">
-                  Full-stack e-commerce solution with payment integration, inventory management, and admin dashboard.
+                  Full-stack e-commerce solution with payment integration and inventory management.
                 </p>
                 <div class="flex flex-wrap gap-2 mb-4">
-                  <span class="px-3 py-1 bg-blue-100 dark:bg-blue-900/30 text-blue-600 dark:text-blue-400 rounded-full text-sm">React</span>
-                  <span class="px-3 py-1 bg-blue-100 dark:bg-blue-900/30 text-blue-600 dark:text-blue-400 rounded-full text-sm">Node.js</span>
-                  <span class="px-3 py-1 bg-blue-100 dark:bg-blue-900/30 text-blue-600 dark:text-blue-400 rounded-full text-sm">MongoDB</span>
+                  <span class="px-3 py-1 bg-yellow-100 dark:bg-yellow-900/30 text-yellow-700 dark:text-yellow-400 rounded-full text-sm font-medium">React</span>
+                  <span class="px-3 py-1 bg-yellow-100 dark:bg-yellow-900/30 text-yellow-700 dark:text-yellow-400 rounded-full text-sm font-medium">Node.js</span>
+                  <span class="px-3 py-1 bg-yellow-100 dark:bg-yellow-900/30 text-yellow-700 dark:text-yellow-400 rounded-full text-sm font-medium">MongoDB</span>
                 </div>
-                <a href="#" class="text-blue-600 dark:text-blue-400 hover:underline font-medium">
+                <a href="#" class="text-zinc-900 dark:text-white hover:text-yellow-500 dark:hover:text-yellow-400 font-semibold transition-colors">
                   View Project →
                 </a>
               </div>
@@ -75,24 +75,24 @@ import BaseLayout from "@/layouts/BaseLayout.astro";
           </div>
 
           <!-- Project 2 -->
-          <div class="project-slide min-w-full md:min-w-[calc(50%-12px)] lg:min-w-[calc(33.333%-16px)]">
-            <div class="bg-white dark:bg-zinc-800 rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow">
-              <div class="aspect-video bg-gradient-to-br from-green-500 to-teal-600 flex items-center justify-center">
+          <div class="project-slide min-w-[calc(50%-12px)] flex-shrink-0">
+            <div class="bg-white dark:bg-zinc-800 rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-shadow h-full">
+              <div class="aspect-video bg-gradient-to-br from-emerald-400 to-teal-500 flex items-center justify-center">
                 <span class="text-white text-4xl font-bold">Analytics</span>
               </div>
               <div class="p-6">
-                <h3 class="text-2xl font-semibold text-zinc-900 dark:text-white mb-2">
+                <h3 class="text-2xl font-bold text-zinc-900 dark:text-white mb-2">
                   Analytics Dashboard
                 </h3>
                 <p class="text-zinc-600 dark:text-zinc-400 mb-4">
-                  Real-time analytics platform with data visualization, custom reports, and AI-powered insights.
+                  Real-time analytics platform with data visualization and AI-powered insights.
                 </p>
                 <div class="flex flex-wrap gap-2 mb-4">
-                  <span class="px-3 py-1 bg-green-100 dark:bg-green-900/30 text-green-600 dark:text-green-400 rounded-full text-sm">Vue.js</span>
-                  <span class="px-3 py-1 bg-green-100 dark:bg-green-900/30 text-green-600 dark:text-green-400 rounded-full text-sm">Python</span>
-                  <span class="px-3 py-1 bg-green-100 dark:bg-green-900/30 text-green-600 dark:text-green-400 rounded-full text-sm">PostgreSQL</span>
+                  <span class="px-3 py-1 bg-emerald-100 dark:bg-emerald-900/30 text-emerald-700 dark:text-emerald-400 rounded-full text-sm font-medium">Vue.js</span>
+                  <span class="px-3 py-1 bg-emerald-100 dark:bg-emerald-900/30 text-emerald-700 dark:text-emerald-400 rounded-full text-sm font-medium">Python</span>
+                  <span class="px-3 py-1 bg-emerald-100 dark:bg-emerald-900/30 text-emerald-700 dark:text-emerald-400 rounded-full text-sm font-medium">PostgreSQL</span>
                 </div>
-                <a href="#" class="text-blue-600 dark:text-blue-400 hover:underline font-medium">
+                <a href="#" class="text-zinc-900 dark:text-white hover:text-emerald-500 dark:hover:text-emerald-400 font-semibold transition-colors">
                   View Project →
                 </a>
               </div>
@@ -100,24 +100,24 @@ import BaseLayout from "@/layouts/BaseLayout.astro";
           </div>
 
           <!-- Project 3 -->
-          <div class="project-slide min-w-full md:min-w-[calc(50%-12px)] lg:min-w-[calc(33.333%-16px)]">
-            <div class="bg-white dark:bg-zinc-800 rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow">
-              <div class="aspect-video bg-gradient-to-br from-orange-500 to-red-600 flex items-center justify-center">
+          <div class="project-slide min-w-[calc(50%-12px)] flex-shrink-0">
+            <div class="bg-white dark:bg-zinc-800 rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-shadow h-full">
+              <div class="aspect-video bg-gradient-to-br from-rose-400 to-pink-500 flex items-center justify-center">
                 <span class="text-white text-4xl font-bold">Social</span>
               </div>
               <div class="p-6">
-                <h3 class="text-2xl font-semibold text-zinc-900 dark:text-white mb-2">
+                <h3 class="text-2xl font-bold text-zinc-900 dark:text-white mb-2">
                   Social Media App
                 </h3>
                 <p class="text-zinc-600 dark:text-zinc-400 mb-4">
-                  Social networking platform with real-time messaging, media sharing, and community features.
+                  Social networking platform with real-time messaging and community features.
                 </p>
                 <div class="flex flex-wrap gap-2 mb-4">
-                  <span class="px-3 py-1 bg-orange-100 dark:bg-orange-900/30 text-orange-600 dark:text-orange-400 rounded-full text-sm">Next.js</span>
-                  <span class="px-3 py-1 bg-orange-100 dark:bg-orange-900/30 text-orange-600 dark:text-orange-400 rounded-full text-sm">Firebase</span>
-                  <span class="px-3 py-1 bg-orange-100 dark:bg-orange-900/30 text-orange-600 dark:text-orange-400 rounded-full text-sm">WebSocket</span>
+                  <span class="px-3 py-1 bg-rose-100 dark:bg-rose-900/30 text-rose-700 dark:text-rose-400 rounded-full text-sm font-medium">Next.js</span>
+                  <span class="px-3 py-1 bg-rose-100 dark:bg-rose-900/30 text-rose-700 dark:text-rose-400 rounded-full text-sm font-medium">Firebase</span>
+                  <span class="px-3 py-1 bg-rose-100 dark:bg-rose-900/30 text-rose-700 dark:text-rose-400 rounded-full text-sm font-medium">WebSocket</span>
                 </div>
-                <a href="#" class="text-blue-600 dark:text-blue-400 hover:underline font-medium">
+                <a href="#" class="text-zinc-900 dark:text-white hover:text-rose-500 dark:hover:text-rose-400 font-semibold transition-colors">
                   View Project →
                 </a>
               </div>
@@ -125,24 +125,24 @@ import BaseLayout from "@/layouts/BaseLayout.astro";
           </div>
 
           <!-- Project 4 -->
-          <div class="project-slide min-w-full md:min-w-[calc(50%-12px)] lg:min-w-[calc(33.333%-16px)]">
-            <div class="bg-white dark:bg-zinc-800 rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow">
-              <div class="aspect-video bg-gradient-to-br from-purple-500 to-pink-600 flex items-center justify-center">
+          <div class="project-slide min-w-[calc(50%-12px)] flex-shrink-0">
+            <div class="bg-white dark:bg-zinc-800 rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-shadow h-full">
+              <div class="aspect-video bg-gradient-to-br from-blue-400 to-cyan-500 flex items-center justify-center">
                 <span class="text-white text-4xl font-bold">Mobile</span>
               </div>
               <div class="p-6">
-                <h3 class="text-2xl font-semibold text-zinc-900 dark:text-white mb-2">
+                <h3 class="text-2xl font-bold text-zinc-900 dark:text-white mb-2">
                   Fitness Tracker App
                 </h3>
                 <p class="text-zinc-600 dark:text-zinc-400 mb-4">
-                  Cross-platform mobile app for fitness tracking with workout plans and nutrition guidance.
+                  Cross-platform mobile app for fitness tracking with workout plans.
                 </p>
                 <div class="flex flex-wrap gap-2 mb-4">
-                  <span class="px-3 py-1 bg-purple-100 dark:bg-purple-900/30 text-purple-600 dark:text-purple-400 rounded-full text-sm">React Native</span>
-                  <span class="px-3 py-1 bg-purple-100 dark:bg-purple-900/30 text-purple-600 dark:text-purple-400 rounded-full text-sm">Express</span>
-                  <span class="px-3 py-1 bg-purple-100 dark:bg-purple-900/30 text-purple-600 dark:text-purple-400 rounded-full text-sm">MySQL</span>
+                  <span class="px-3 py-1 bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-400 rounded-full text-sm font-medium">React Native</span>
+                  <span class="px-3 py-1 bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-400 rounded-full text-sm font-medium">Express</span>
+                  <span class="px-3 py-1 bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-400 rounded-full text-sm font-medium">MySQL</span>
                 </div>
-                <a href="#" class="text-blue-600 dark:text-blue-400 hover:underline font-medium">
+                <a href="#" class="text-zinc-900 dark:text-white hover:text-blue-500 dark:hover:text-blue-400 font-semibold transition-colors">
                   View Project →
                 </a>
               </div>
@@ -154,7 +154,7 @@ import BaseLayout from "@/layouts/BaseLayout.astro";
         <div class="flex justify-center gap-4 mt-8">
           <button
             id="prevBtn"
-            class="p-3 rounded-full bg-white dark:bg-zinc-800 text-zinc-900 dark:text-white shadow-lg hover:shadow-xl transition-all border border-zinc-200 dark:border-zinc-700"
+            class="p-3 rounded-full bg-zinc-900 dark:bg-white text-white dark:text-zinc-900 hover:bg-yellow-500 hover:text-zinc-900 dark:hover:bg-yellow-500 transition-all"
             aria-label="Previous project"
           >
             <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -163,7 +163,7 @@ import BaseLayout from "@/layouts/BaseLayout.astro";
           </button>
           <button
             id="nextBtn"
-            class="p-3 rounded-full bg-white dark:bg-zinc-800 text-zinc-900 dark:text-white shadow-lg hover:shadow-xl transition-all border border-zinc-200 dark:border-zinc-700"
+            class="p-3 rounded-full bg-zinc-900 dark:bg-white text-white dark:text-zinc-900 hover:bg-yellow-500 hover:text-zinc-900 dark:hover:bg-yellow-500 transition-all"
             aria-label="Next project"
           >
             <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -180,88 +180,25 @@ import BaseLayout from "@/layouts/BaseLayout.astro";
     </div>
   </section>
 
-  <!-- Feature Section 1 -->
-  <section class="relative w-full bg-zinc-50 dark:bg-zinc-900 py-16 md:py-24">
-    <div class="container px-4 mx-auto text-center">
-      <h2 class="text-4xl md:text-5xl lg:text-6xl font-semibold tracking-tight text-zinc-900 dark:text-white mb-4">
-        Lightning fast performance
-      </h2>
-      <p class="text-lg md:text-xl text-zinc-600 dark:text-zinc-400 mb-6 max-w-2xl mx-auto">
-        Optimized for speed and efficiency. Experience unparalleled performance across all devices.
-      </p>
-      <div class="mt-8 flex justify-center gap-6">
-        <a
-          href="#"
-          class="text-blue-600 dark:text-blue-400 hover:underline text-lg font-medium transition-colors"
-        >
-          Learn more →
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <!-- Feature Section 2 -->
-  <section class="relative w-full bg-zinc-900 dark:bg-zinc-950 py-16 md:py-24">
-    <div class="container px-4 mx-auto text-center">
-      <h2 class="text-4xl md:text-5xl lg:text-6xl font-semibold tracking-tight text-white mb-4">
-        Built for developers
-      </h2>
-      <p class="text-lg md:text-xl text-zinc-300 dark:text-zinc-400 mb-6 max-w-2xl mx-auto">
-        Modern tools and frameworks. Write less code, build more features.
-      </p>
-      <div class="mt-8 flex justify-center gap-6">
-        <a
-          href="#"
-          class="text-blue-400 hover:underline text-lg font-medium transition-colors"
-        >
-          Explore features →
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <!-- Feature Section 3 -->
-  <section class="relative w-full bg-white dark:bg-zinc-900 py-16 md:py-24">
-    <div class="container px-4 mx-auto text-center">
-      <h2 class="text-4xl md:text-5xl lg:text-6xl font-semibold tracking-tight text-zinc-900 dark:text-white mb-4">
-        Scale with confidence
-      </h2>
-      <p class="text-lg md:text-xl text-zinc-600 dark:text-zinc-400 mb-6 max-w-2xl mx-auto">
-        From startup to enterprise. Infrastructure that grows with your needs.
-      </p>
-      <div class="mt-8 flex justify-center gap-6">
-        <a
-          href="#"
-          class="text-blue-600 dark:text-blue-400 hover:underline text-lg font-medium transition-colors"
-        >
-          Learn more →
-        </a>
-        <a
-          href="#"
-          class="text-blue-600 dark:text-blue-400 hover:underline text-lg font-medium transition-colors"
-        >
-          View pricing →
-        </a>
-      </div>
-    </div>
-  </section>
-
   <!-- CTA Section -->
-  <section id="contact" class="relative w-full bg-zinc-50 dark:bg-zinc-950 py-16 md:py-20">
+  <section id="contact" class="relative w-full min-h-screen bg-zinc-900 dark:bg-zinc-950 flex items-center justify-center">
     <div class="container px-4 mx-auto text-center">
-      <h2 class="text-3xl md:text-4xl lg:text-5xl font-semibold tracking-tight text-zinc-900 dark:text-white mb-6">
+      <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight text-white mb-6">
         Ready to work together?
       </h2>
+      <p class="text-lg md:text-xl text-zinc-400 mb-8 max-w-2xl mx-auto">
+        Let's build something amazing together. Get in touch to discuss your next project.
+      </p>
       <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
         <a
           href="#"
-          class={buttonVariants({ variant: "default", size: "lg" }) + " text-base"}
+          class="px-8 py-3 bg-yellow-500 text-zinc-900 rounded-full font-semibold hover:bg-yellow-400 transition-colors"
         >
           Hire me
         </a>
         <a
           href="#"
-          class={buttonVariants({ variant: "outline", size: "lg" }) + " text-base"}
+          class="px-8 py-3 border-2 border-white text-white rounded-full font-semibold hover:bg-white hover:text-zinc-900 transition-colors"
         >
           Download CV
         </a>
@@ -283,15 +220,9 @@ import BaseLayout from "@/layouts/BaseLayout.astro";
   const slides = document.querySelectorAll('.project-slide');
   const totalSlides = slides.length;
 
-  // Calculate slides per view based on screen size
+  // Always show 2 cards per view
   function updateSlidesPerView() {
-    if (window.innerWidth >= 1024) {
-      slidesPerView = 3;
-    } else if (window.innerWidth >= 768) {
-      slidesPerView = 2;
-    } else {
-      slidesPerView = 1;
-    }
+    slidesPerView = 2;
   }
 
   // Calculate total pages
@@ -310,8 +241,8 @@ import BaseLayout from "@/layouts/BaseLayout.astro";
       const dot = document.createElement('button');
       dot.className = `w-2 h-2 rounded-full transition-all ${
         i === currentIndex
-          ? 'bg-blue-600 dark:bg-blue-400 w-8'
-          : 'bg-zinc-300 dark:bg-zinc-600'
+          ? 'bg-yellow-500 w-8'
+          : 'bg-zinc-400 dark:bg-zinc-600'
       }`;
       dot.setAttribute('aria-label', `Go to slide ${i + 1}`);
       dot.addEventListener('click', () => goToSlide(i));
@@ -326,9 +257,9 @@ import BaseLayout from "@/layouts/BaseLayout.astro";
     const dots = dotsContainer.querySelectorAll('button');
     dots.forEach((dot, index) => {
       if (index === currentIndex) {
-        dot.className = 'w-2 h-2 rounded-full transition-all bg-blue-600 dark:bg-blue-400 w-8';
+        dot.className = 'w-2 h-2 rounded-full transition-all bg-yellow-500 w-8';
       } else {
-        dot.className = 'w-2 h-2 rounded-full transition-all bg-zinc-300 dark:bg-zinc-600';
+        dot.className = 'w-2 h-2 rounded-full transition-all bg-zinc-400 dark:bg-zinc-600';
       }
     });
   }
@@ -338,10 +269,9 @@ import BaseLayout from "@/layouts/BaseLayout.astro";
     const totalPages = getTotalPages();
     currentIndex = Math.max(0, Math.min(index, totalPages - 1));
 
-    // Calculate transform based on slides per view
-    const slideWidth = 100 / slidesPerView;
-    const gap = slidesPerView > 1 ? 1.5 : 0; // 24px gap converted to percentage
-    const offset = -(currentIndex * (slideWidth + gap));
+    // Calculate transform - each slide is 50% width + 12px gap
+    // Move by 2 cards at a time (100% + gap)
+    const offset = -(currentIndex * 100);
 
     // GSAP animation
     gsap.to(slider, {
