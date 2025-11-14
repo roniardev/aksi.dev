@@ -14,21 +14,168 @@ import BaseLayout from "@/layouts/BaseLayout.astro";
         aksi<span class="text-zinc-600 dark:text-zinc-400">.dev</span>
       </h1>
       <p class="text-xl md:text-2xl lg:text-3xl text-zinc-600 dark:text-zinc-400 mb-8 max-w-3xl mx-auto">
-        Build faster. Ship better. Scale infinitely.
+        Freelance Developer • Creating Digital Excellence
       </p>
       <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
         <a
-          href="#learn-more"
+          href="#projects"
           class="text-blue-600 dark:text-blue-400 hover:underline text-lg font-medium transition-colors"
         >
-          Learn more →
+          View Projects →
         </a>
         <a
-          href="#get-started"
+          href="#contact"
           class="text-blue-600 dark:text-blue-400 hover:underline text-lg font-medium transition-colors"
         >
-          Get started →
+          Get in touch →
         </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="relative w-full bg-zinc-50 dark:bg-zinc-900 py-16 md:py-24 overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-12">
+        <h2 class="text-4xl md:text-5xl lg:text-6xl font-semibold tracking-tight text-zinc-900 dark:text-white mb-4">
+          Featured Projects
+        </h2>
+        <p class="text-lg md:text-xl text-zinc-600 dark:text-zinc-400 max-w-2xl mx-auto">
+          A showcase of my recent work as a freelance developer
+        </p>
+      </div>
+
+      <!-- Slider Container -->
+      <div class="relative">
+        <!-- Projects Slider -->
+        <div id="projectsSlider" class="flex gap-6 transition-transform duration-500">
+          <!-- Project 1 -->
+          <div class="project-slide min-w-full md:min-w-[calc(50%-12px)] lg:min-w-[calc(33.333%-16px)]">
+            <div class="bg-white dark:bg-zinc-800 rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow">
+              <div class="aspect-video bg-gradient-to-br from-blue-500 to-purple-600 flex items-center justify-center">
+                <span class="text-white text-4xl font-bold">E-Commerce</span>
+              </div>
+              <div class="p-6">
+                <h3 class="text-2xl font-semibold text-zinc-900 dark:text-white mb-2">
+                  Modern E-Commerce Platform
+                </h3>
+                <p class="text-zinc-600 dark:text-zinc-400 mb-4">
+                  Full-stack e-commerce solution with payment integration, inventory management, and admin dashboard.
+                </p>
+                <div class="flex flex-wrap gap-2 mb-4">
+                  <span class="px-3 py-1 bg-blue-100 dark:bg-blue-900/30 text-blue-600 dark:text-blue-400 rounded-full text-sm">React</span>
+                  <span class="px-3 py-1 bg-blue-100 dark:bg-blue-900/30 text-blue-600 dark:text-blue-400 rounded-full text-sm">Node.js</span>
+                  <span class="px-3 py-1 bg-blue-100 dark:bg-blue-900/30 text-blue-600 dark:text-blue-400 rounded-full text-sm">MongoDB</span>
+                </div>
+                <a href="#" class="text-blue-600 dark:text-blue-400 hover:underline font-medium">
+                  View Project →
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 2 -->
+          <div class="project-slide min-w-full md:min-w-[calc(50%-12px)] lg:min-w-[calc(33.333%-16px)]">
+            <div class="bg-white dark:bg-zinc-800 rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow">
+              <div class="aspect-video bg-gradient-to-br from-green-500 to-teal-600 flex items-center justify-center">
+                <span class="text-white text-4xl font-bold">Analytics</span>
+              </div>
+              <div class="p-6">
+                <h3 class="text-2xl font-semibold text-zinc-900 dark:text-white mb-2">
+                  Analytics Dashboard
+                </h3>
+                <p class="text-zinc-600 dark:text-zinc-400 mb-4">
+                  Real-time analytics platform with data visualization, custom reports, and AI-powered insights.
+                </p>
+                <div class="flex flex-wrap gap-2 mb-4">
+                  <span class="px-3 py-1 bg-green-100 dark:bg-green-900/30 text-green-600 dark:text-green-400 rounded-full text-sm">Vue.js</span>
+                  <span class="px-3 py-1 bg-green-100 dark:bg-green-900/30 text-green-600 dark:text-green-400 rounded-full text-sm">Python</span>
+                  <span class="px-3 py-1 bg-green-100 dark:bg-green-900/30 text-green-600 dark:text-green-400 rounded-full text-sm">PostgreSQL</span>
+                </div>
+                <a href="#" class="text-blue-600 dark:text-blue-400 hover:underline font-medium">
+                  View Project →
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 3 -->
+          <div class="project-slide min-w-full md:min-w-[calc(50%-12px)] lg:min-w-[calc(33.333%-16px)]">
+            <div class="bg-white dark:bg-zinc-800 rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow">
+              <div class="aspect-video bg-gradient-to-br from-orange-500 to-red-600 flex items-center justify-center">
+                <span class="text-white text-4xl font-bold">Social</span>
+              </div>
+              <div class="p-6">
+                <h3 class="text-2xl font-semibold text-zinc-900 dark:text-white mb-2">
+                  Social Media App
+                </h3>
+                <p class="text-zinc-600 dark:text-zinc-400 mb-4">
+                  Social networking platform with real-time messaging, media sharing, and community features.
+                </p>
+                <div class="flex flex-wrap gap-2 mb-4">
+                  <span class="px-3 py-1 bg-orange-100 dark:bg-orange-900/30 text-orange-600 dark:text-orange-400 rounded-full text-sm">Next.js</span>
+                  <span class="px-3 py-1 bg-orange-100 dark:bg-orange-900/30 text-orange-600 dark:text-orange-400 rounded-full text-sm">Firebase</span>
+                  <span class="px-3 py-1 bg-orange-100 dark:bg-orange-900/30 text-orange-600 dark:text-orange-400 rounded-full text-sm">WebSocket</span>
+                </div>
+                <a href="#" class="text-blue-600 dark:text-blue-400 hover:underline font-medium">
+                  View Project →
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 4 -->
+          <div class="project-slide min-w-full md:min-w-[calc(50%-12px)] lg:min-w-[calc(33.333%-16px)]">
+            <div class="bg-white dark:bg-zinc-800 rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow">
+              <div class="aspect-video bg-gradient-to-br from-purple-500 to-pink-600 flex items-center justify-center">
+                <span class="text-white text-4xl font-bold">Mobile</span>
+              </div>
+              <div class="p-6">
+                <h3 class="text-2xl font-semibold text-zinc-900 dark:text-white mb-2">
+                  Fitness Tracker App
+                </h3>
+                <p class="text-zinc-600 dark:text-zinc-400 mb-4">
+                  Cross-platform mobile app for fitness tracking with workout plans and nutrition guidance.
+                </p>
+                <div class="flex flex-wrap gap-2 mb-4">
+                  <span class="px-3 py-1 bg-purple-100 dark:bg-purple-900/30 text-purple-600 dark:text-purple-400 rounded-full text-sm">React Native</span>
+                  <span class="px-3 py-1 bg-purple-100 dark:bg-purple-900/30 text-purple-600 dark:text-purple-400 rounded-full text-sm">Express</span>
+                  <span class="px-3 py-1 bg-purple-100 dark:bg-purple-900/30 text-purple-600 dark:text-purple-400 rounded-full text-sm">MySQL</span>
+                </div>
+                <a href="#" class="text-blue-600 dark:text-blue-400 hover:underline font-medium">
+                  View Project →
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Navigation Buttons -->
+        <div class="flex justify-center gap-4 mt-8">
+          <button
+            id="prevBtn"
+            class="p-3 rounded-full bg-white dark:bg-zinc-800 text-zinc-900 dark:text-white shadow-lg hover:shadow-xl transition-all border border-zinc-200 dark:border-zinc-700"
+            aria-label="Previous project"
+          >
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+            </svg>
+          </button>
+          <button
+            id="nextBtn"
+            class="p-3 rounded-full bg-white dark:bg-zinc-800 text-zinc-900 dark:text-white shadow-lg hover:shadow-xl transition-all border border-zinc-200 dark:border-zinc-700"
+            aria-label="Next project"
+          >
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+            </svg>
+          </button>
+        </div>
+
+        <!-- Dots Indicator -->
+        <div id="dotsContainer" class="flex justify-center gap-2 mt-6">
+          <!-- Dots will be generated by JavaScript -->
+        </div>
       </div>
     </div>
   </section>
@@ -100,25 +247,220 @@ import BaseLayout from "@/layouts/BaseLayout.astro";
   </section>
 
   <!-- CTA Section -->
-  <section class="relative w-full bg-zinc-50 dark:bg-zinc-950 py-16 md:py-20">
+  <section id="contact" class="relative w-full bg-zinc-50 dark:bg-zinc-950 py-16 md:py-20">
     <div class="container px-4 mx-auto text-center">
       <h2 class="text-3xl md:text-4xl lg:text-5xl font-semibold tracking-tight text-zinc-900 dark:text-white mb-6">
-        Ready to get started?
+        Ready to work together?
       </h2>
       <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
         <a
           href="#"
           class={buttonVariants({ variant: "default", size: "lg" }) + " text-base"}
         >
-          Start free trial
+          Hire me
         </a>
         <a
           href="#"
           class={buttonVariants({ variant: "outline", size: "lg" }) + " text-base"}
         >
-          Contact sales
+          Download CV
         </a>
       </div>
     </div>
   </section>
 </BaseLayout>
+
+<script>
+  import { gsap } from 'gsap';
+
+  let currentIndex = 0;
+  let slidesPerView = 1;
+
+  const slider = document.getElementById('projectsSlider');
+  const prevBtn = document.getElementById('prevBtn');
+  const nextBtn = document.getElementById('nextBtn');
+  const dotsContainer = document.getElementById('dotsContainer');
+  const slides = document.querySelectorAll('.project-slide');
+  const totalSlides = slides.length;
+
+  // Calculate slides per view based on screen size
+  function updateSlidesPerView() {
+    if (window.innerWidth >= 1024) {
+      slidesPerView = 3;
+    } else if (window.innerWidth >= 768) {
+      slidesPerView = 2;
+    } else {
+      slidesPerView = 1;
+    }
+  }
+
+  // Calculate total pages
+  function getTotalPages() {
+    return Math.ceil(totalSlides / slidesPerView);
+  }
+
+  // Create dots indicator
+  function createDots() {
+    if (!dotsContainer) return;
+
+    dotsContainer.innerHTML = '';
+    const totalPages = getTotalPages();
+
+    for (let i = 0; i < totalPages; i++) {
+      const dot = document.createElement('button');
+      dot.className = `w-2 h-2 rounded-full transition-all ${
+        i === currentIndex
+          ? 'bg-blue-600 dark:bg-blue-400 w-8'
+          : 'bg-zinc-300 dark:bg-zinc-600'
+      }`;
+      dot.setAttribute('aria-label', `Go to slide ${i + 1}`);
+      dot.addEventListener('click', () => goToSlide(i));
+      dotsContainer.appendChild(dot);
+    }
+  }
+
+  // Update dots
+  function updateDots() {
+    if (!dotsContainer) return;
+
+    const dots = dotsContainer.querySelectorAll('button');
+    dots.forEach((dot, index) => {
+      if (index === currentIndex) {
+        dot.className = 'w-2 h-2 rounded-full transition-all bg-blue-600 dark:bg-blue-400 w-8';
+      } else {
+        dot.className = 'w-2 h-2 rounded-full transition-all bg-zinc-300 dark:bg-zinc-600';
+      }
+    });
+  }
+
+  // Go to specific slide with GSAP animation
+  function goToSlide(index: number) {
+    const totalPages = getTotalPages();
+    currentIndex = Math.max(0, Math.min(index, totalPages - 1));
+
+    // Calculate transform based on slides per view
+    const slideWidth = 100 / slidesPerView;
+    const gap = slidesPerView > 1 ? 1.5 : 0; // 24px gap converted to percentage
+    const offset = -(currentIndex * (slideWidth + gap));
+
+    // GSAP animation
+    gsap.to(slider, {
+      x: `${offset}%`,
+      duration: 0.8,
+      ease: "power3.out"
+    });
+
+    updateDots();
+    updateButtons();
+  }
+
+  // Update button states
+  function updateButtons() {
+    const totalPages = getTotalPages();
+
+    if (prevBtn) {
+      prevBtn.disabled = currentIndex === 0;
+      prevBtn.style.opacity = currentIndex === 0 ? '0.5' : '1';
+      prevBtn.style.cursor = currentIndex === 0 ? 'not-allowed' : 'pointer';
+    }
+
+    if (nextBtn) {
+      nextBtn.disabled = currentIndex >= totalPages - 1;
+      nextBtn.style.opacity = currentIndex >= totalPages - 1 ? '0.5' : '1';
+      nextBtn.style.cursor = currentIndex >= totalPages - 1 ? 'not-allowed' : 'pointer';
+    }
+  }
+
+  // Next slide
+  function nextSlide() {
+    const totalPages = getTotalPages();
+    if (currentIndex < totalPages - 1) {
+      goToSlide(currentIndex + 1);
+    }
+  }
+
+  // Previous slide
+  function prevSlide() {
+    if (currentIndex > 0) {
+      goToSlide(currentIndex - 1);
+    }
+  }
+
+  // Initialize
+  function init() {
+    updateSlidesPerView();
+    createDots();
+    updateButtons();
+
+    // Add event listeners
+    if (prevBtn) {
+      prevBtn.addEventListener('click', prevSlide);
+    }
+
+    if (nextBtn) {
+      nextBtn.addEventListener('click', nextSlide);
+    }
+
+    // Handle window resize
+    let resizeTimeout: ReturnType<typeof setTimeout>;
+    window.addEventListener('resize', () => {
+      clearTimeout(resizeTimeout);
+      resizeTimeout = setTimeout(() => {
+        const oldSlidesPerView = slidesPerView;
+        updateSlidesPerView();
+
+        if (oldSlidesPerView !== slidesPerView) {
+          currentIndex = 0;
+          createDots();
+          goToSlide(0);
+        }
+      }, 250);
+    });
+
+    // Auto play (optional)
+    let autoplayInterval = setInterval(() => {
+      const totalPages = getTotalPages();
+      if (currentIndex < totalPages - 1) {
+        nextSlide();
+      } else {
+        currentIndex = -1;
+        nextSlide();
+      }
+    }, 5000);
+
+    // Pause autoplay on hover
+    if (slider) {
+      slider.addEventListener('mouseenter', () => {
+        clearInterval(autoplayInterval);
+      });
+
+      slider.addEventListener('mouseleave', () => {
+        autoplayInterval = setInterval(() => {
+          const totalPages = getTotalPages();
+          if (currentIndex < totalPages - 1) {
+            nextSlide();
+          } else {
+            currentIndex = -1;
+            nextSlide();
+          }
+        }, 5000);
+      });
+    }
+
+    // Animate slides on load with GSAP
+    gsap.from('.project-slide', {
+      opacity: 0,
+      y: 50,
+      duration: 0.8,
+      stagger: 0.2,
+      ease: "power3.out"
+    });
+  }
+
+  // Start when DOM is ready
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', init);
+  } else {
+    init();
+  }
+</script>
