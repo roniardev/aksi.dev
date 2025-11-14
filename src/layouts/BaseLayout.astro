@@ -19,7 +19,7 @@ const { title, description, ogImage } = Astro.props;
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <HeadSEO title={title} description={description} ogImage={ogImage} />
   </head>
-  <body class="bg-background min-h-screen font-sans antialiased">
+  <body class="bg-white dark:bg-zinc-950 min-h-screen font-sans antialiased">
     <div class="relative flex min-h-screen flex-col">
       <Header />
       <main class="flex-auto">
@@ -27,5 +27,28 @@ const { title, description, ogImage } = Astro.props;
       </main>
       <Footer />
     </div>
+
+    <script>
+      // Smooth scroll animation on element visibility
+      const observerCallback = (entries: IntersectionObserverEntry[]) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('animate-in');
+          }
+        });
+      };
+
+      const observerOptions = {
+        threshold: 0.1,
+        rootMargin: '0px 0px -100px 0px'
+      };
+
+      const observer = new IntersectionObserver(observerCallback, observerOptions);
+
+      // Observe all sections
+      document.querySelectorAll('section').forEach(section => {
+        observer.observe(section);
+      });
+    </script>
   </body>
 </html>
