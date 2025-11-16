@@ -1,148 +1,133 @@
 ---
 import BaseLayout from "@/layouts/BaseLayout.astro";
-import { buttonVariants } from "@/components/ui/button";
 ---
 
 <BaseLayout
-  title="About Us - Akselerasi"
-  description="Learn more about our company and our commitment to quality printing and graphics"
+  title="About - Akselerasi"
+  description="Learn more about our company and our commitment"
 >
   <!-- Hero Section -->
-  <section class="bg-gradient-to-b from-gray-50 to-white py-16 md:py-24">
-    <div class="container px-4 mx-auto">
-      <div class="max-w-3xl mx-auto text-center">
-        <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6">
-          About Akselerasi
-        </h1>
-        <p class="text-lg md:text-xl text-gray-600">
-          Your trusted partner in professional printing and graphics solutions
-        </p>
-      </div>
+  <section class="pt-20 pb-16 md:pt-28 md:pb-24 bg-white">
+    <div class="max-w-[980px] mx-auto px-6 text-center">
+      <h1 class="text-5xl md:text-7xl font-semibold mb-4 tracking-tight">
+        About Akselerasi
+      </h1>
+      <p class="text-xl md:text-2xl text-black/60">
+        Quality printing. Exceptional service.
+      </p>
     </div>
   </section>
 
   <!-- Story Section -->
-  <section class="py-12 md:py-20 bg-white">
-    <div class="container px-4 mx-auto">
-      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+  <section class="pb-20 md:pb-32 bg-white">
+    <div class="max-w-[980px] mx-auto px-6">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center mb-24">
         <div>
-          <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
-            Our Story
+          <h2 class="text-4xl md:text-5xl font-semibold mb-6 tracking-tight">
+            Our story
           </h2>
-          <div class="space-y-4 text-gray-600">
-            <p>
-              Founded with a passion for exceptional quality and customer service, Akselerasi has been serving businesses and individuals with premium printing and graphics solutions.
-            </p>
-            <p>
-              We combine state-of-the-art technology with traditional craftsmanship to deliver products that exceed expectations. Our team of experienced professionals is dedicated to bringing your vision to life, whether it's a simple business card or a complex large-format installation.
-            </p>
-            <p>
-              From concept to completion, we're committed to providing personalized service, competitive pricing, and unmatched quality that helps our clients make a lasting impression.
-            </p>
-          </div>
+          <p class="text-xl text-black/60 leading-relaxed">
+            Founded with a passion for exceptional quality and customer service, we've been serving businesses and individuals with premium printing and graphics solutions.
+          </p>
         </div>
-        <div class="aspect-[4/3] rounded-xl overflow-hidden">
+        <div class="aspect-square rounded-2xl overflow-hidden">
           <img
-            src="https://images.unsplash.com/photo-1497366811353-6870744d04b2?w=800&h=600&fit=crop"
+            src="https://images.unsplash.com/photo-1497366811353-6870744d04b2?w=800&h=800&fit=crop"
             alt="About us"
             class="w-full h-full object-cover"
             loading="lazy"
           />
         </div>
       </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+        <div class="aspect-square rounded-2xl overflow-hidden order-2 md:order-1">
+          <img
+            src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=800&h=800&fit=crop"
+            alt="Our approach"
+            class="w-full h-full object-cover"
+            loading="lazy"
+          />
+        </div>
+        <div class="order-1 md:order-2">
+          <h2 class="text-4xl md:text-5xl font-semibold mb-6 tracking-tight">
+            Our approach
+          </h2>
+          <p class="text-xl text-black/60 leading-relaxed">
+            We combine state-of-the-art technology with traditional craftsmanship. From concept to completion, we're committed to bringing your vision to life.
+          </p>
+        </div>
+      </div>
     </div>
   </section>
 
   <!-- Values Section -->
-  <section class="py-12 md:py-20 bg-gray-50">
-    <div class="container px-4 mx-auto">
-      <h2 class="text-3xl md:text-4xl font-bold text-center text-gray-900 mb-12">
-        Our Core Values
+  <section class="py-20 md:py-32 bg-neutral-50">
+    <div class="max-w-[980px] mx-auto px-6">
+      <h2 class="text-4xl md:text-5xl font-semibold mb-16 text-center tracking-tight">
+        Our values
       </h2>
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-        <div class="bg-white p-8 rounded-xl border border-gray-200">
-          <div class="w-12 h-12 bg-blue-600 rounded-lg flex items-center justify-center mb-4">
-            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-            </svg>
-          </div>
-          <h3 class="text-xl font-bold text-gray-900 mb-3">Quality First</h3>
-          <p class="text-gray-600">
-            We never compromise on quality. Every project receives the same attention to detail and commitment to excellence.
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+        <div class="text-center">
+          <h3 class="text-2xl font-semibold mb-3">Quality First</h3>
+          <p class="text-lg text-black/60">
+            We never compromise. Every project receives our full attention and commitment.
           </p>
         </div>
-        <div class="bg-white p-8 rounded-xl border border-gray-200">
-          <div class="w-12 h-12 bg-blue-600 rounded-lg flex items-center justify-center mb-4">
-            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"></path>
-            </svg>
-          </div>
-          <h3 class="text-xl font-bold text-gray-900 mb-3">Customer Focus</h3>
-          <p class="text-gray-600">
-            Your satisfaction drives everything we do. We listen, understand, and deliver solutions tailored to your needs.
+        <div class="text-center">
+          <h3 class="text-2xl font-semibold mb-3">Customer Focus</h3>
+          <p class="text-lg text-black/60">
+            Your satisfaction drives everything we do. We listen and deliver.
           </p>
         </div>
-        <div class="bg-white p-8 rounded-xl border border-gray-200">
-          <div class="w-12 h-12 bg-blue-600 rounded-lg flex items-center justify-center mb-4">
-            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
-            </svg>
-          </div>
-          <h3 class="text-xl font-bold text-gray-900 mb-3">Innovation</h3>
-          <p class="text-gray-600">
-            We stay ahead of industry trends, continuously investing in new technologies and techniques.
+        <div class="text-center">
+          <h3 class="text-2xl font-semibold mb-3">Innovation</h3>
+          <p class="text-lg text-black/60">
+            We stay ahead with new technologies and techniques.
           </p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Team Section -->
-  <section class="py-12 md:py-20 bg-white">
-    <div class="container px-4 mx-auto">
-      <div class="text-center mb-12">
-        <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-          Our Expertise
-        </h2>
-        <p class="text-lg text-gray-600 max-w-2xl mx-auto">
-          Our team brings decades of combined experience in printing, design, and customer service
-        </p>
-      </div>
-      <div class="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-4xl mx-auto">
+  <!-- Stats Section -->
+  <section class="py-20 md:py-32 bg-white">
+    <div class="max-w-[980px] mx-auto px-6">
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
         <div class="text-center">
-          <div class="text-4xl font-bold text-blue-600 mb-2">25+</div>
-          <div class="text-gray-600">Years Experience</div>
+          <div class="text-5xl md:text-6xl font-semibold mb-2">25+</div>
+          <div class="text-lg text-black/60">Years</div>
         </div>
         <div class="text-center">
-          <div class="text-4xl font-bold text-blue-600 mb-2">10k+</div>
-          <div class="text-gray-600">Projects Completed</div>
+          <div class="text-5xl md:text-6xl font-semibold mb-2">10k+</div>
+          <div class="text-lg text-black/60">Projects</div>
         </div>
         <div class="text-center">
-          <div class="text-4xl font-bold text-blue-600 mb-2">500+</div>
-          <div class="text-gray-600">Happy Clients</div>
+          <div class="text-5xl md:text-6xl font-semibold mb-2">500+</div>
+          <div class="text-lg text-black/60">Clients</div>
         </div>
         <div class="text-center">
-          <div class="text-4xl font-bold text-blue-600 mb-2">99%</div>
-          <div class="text-gray-600">Satisfaction Rate</div>
+          <div class="text-5xl md:text-6xl font-semibold mb-2">99%</div>
+          <div class="text-lg text-black/60">Satisfaction</div>
         </div>
       </div>
     </div>
   </section>
 
   <!-- CTA Section -->
-  <section class="py-16 md:py-24 bg-gradient-to-r from-blue-600 to-blue-700 text-white">
-    <div class="container px-4 mx-auto text-center">
-      <h2 class="text-3xl md:text-4xl font-bold mb-6">
-        Let's Work Together
+  <section class="py-20 md:py-32 bg-neutral-50">
+    <div class="max-w-[980px] mx-auto px-6 text-center">
+      <h2 class="text-4xl md:text-5xl font-semibold mb-6 tracking-tight">
+        Let's work together.
       </h2>
-      <p class="text-lg text-blue-100 max-w-2xl mx-auto mb-8">
-        Ready to bring your project to life? Get in touch with our team today
+      <p class="text-xl md:text-2xl text-black/60 mb-10">
+        Ready to get started?
       </p>
       <a
         href="/contact"
-        class={buttonVariants({ variant: "secondary", size: "lg" })}
+        class="inline-block bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-full text-base font-normal transition-colors"
       >
-        Contact Us
+        Contact us
       </a>
     </div>
   </section>

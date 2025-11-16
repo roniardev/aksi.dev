@@ -1,112 +1,95 @@
 ---
-import { buttonVariants } from "@/components/ui/button";
 ---
 
 <header
-  class="sticky top-0 z-50 w-full border-b bg-white/95 backdrop-blur supports-backdrop-filter:bg-white/60"
+  class="sticky top-0 z-50 w-full bg-white/80 backdrop-blur-xl backdrop-saturate-150"
 >
-  <div class="container px-4 mx-auto flex py-4 items-center justify-between">
+  <div class="max-w-[980px] mx-auto px-6 flex h-11 items-center justify-between text-xs">
     <a
       href="/"
-      class="flex items-center gap-2 text-xl font-black text-gray-900"
+      class="text-xl font-semibold text-black"
       aria-label="Homepage"
     >
-      <span>aksi.dev</span>
+      aksi.dev
     </a>
 
-    <nav class="hidden md:flex items-center gap-6">
+    <nav class="hidden md:flex items-center gap-8">
       <a
         href="/"
-        class="text-sm font-medium text-gray-700 hover:text-gray-900 transition-colors"
+        class="text-black/80 hover:text-black transition-colors"
       >
         Home
       </a>
       <a
         href="/catalog"
-        class="text-sm font-medium text-gray-700 hover:text-gray-900 transition-colors"
+        class="text-black/80 hover:text-black transition-colors"
       >
         Catalog
       </a>
       <a
         href="/products"
-        class="text-sm font-medium text-gray-700 hover:text-gray-900 transition-colors"
+        class="text-black/80 hover:text-black transition-colors"
       >
         Products
       </a>
       <a
         href="/about"
-        class="text-sm font-medium text-gray-700 hover:text-gray-900 transition-colors"
+        class="text-black/80 hover:text-black transition-colors"
       >
         About
       </a>
       <a
         href="/contact"
-        class="text-sm font-medium text-gray-700 hover:text-gray-900 transition-colors"
+        class="text-black/80 hover:text-black transition-colors"
       >
         Contact
-      </a>
-      <a
-        href="https://github.com/roniardev"
-        target="_blank"
-        rel="noopener noreferrer"
-        class={buttonVariants({ variant: "default", size: "sm" })}
-      >
-        GitHub
       </a>
     </nav>
 
     <!-- Mobile menu button -->
     <button
       id="mobile-menu-button"
-      class="md:hidden p-2 text-gray-700"
+      class="md:hidden p-2 text-black"
       aria-label="Toggle menu"
     >
-      <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
       </svg>
     </button>
   </div>
 
   <!-- Mobile menu -->
-  <div id="mobile-menu" class="hidden md:hidden border-t bg-white">
-    <nav class="container px-4 py-4 flex flex-col gap-3">
+  <div id="mobile-menu" class="hidden md:hidden bg-white/95 backdrop-blur-xl">
+    <nav class="max-w-[980px] mx-auto px-6 py-4 flex flex-col gap-3">
       <a
         href="/"
-        class="text-sm font-medium text-gray-700 hover:text-gray-900 py-2"
+        class="text-sm text-black/80 hover:text-black py-2"
       >
         Home
       </a>
       <a
         href="/catalog"
-        class="text-sm font-medium text-gray-700 hover:text-gray-900 py-2"
+        class="text-sm text-black/80 hover:text-black py-2"
       >
         Catalog
       </a>
       <a
         href="/products"
-        class="text-sm font-medium text-gray-700 hover:text-gray-900 py-2"
+        class="text-sm text-black/80 hover:text-black py-2"
       >
         Products
       </a>
       <a
         href="/about"
-        class="text-sm font-medium text-gray-700 hover:text-gray-900 py-2"
+        class="text-sm text-black/80 hover:text-black py-2"
       >
         About
       </a>
       <a
         href="/contact"
-        class="text-sm font-medium text-gray-700 hover:text-gray-900 py-2"
+        class="text-sm text-black/80 hover:text-black py-2"
       >
         Contact
-      </a>
-      <a
-        href="https://github.com/roniardev"
-        target="_blank"
-        rel="noopener noreferrer"
-        class={buttonVariants({ variant: "default", size: "sm" })}
-      >
-        GitHub
       </a>
     </nav>
   </div>
