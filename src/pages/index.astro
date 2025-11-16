@@ -7,33 +7,33 @@ import BaseLayout from "@/layouts/BaseLayout.astro";
   description="Professional printing and graphics solutions"
 >
   <!-- Hero Section -->
-  <section class="relative bg-black text-white pt-16 pb-24 md:pt-20 md:pb-32">
+  <section class="relative bg-white text-black pt-16 pb-24 md:pt-20 md:pb-32">
     <div class="max-w-[980px] mx-auto px-6 text-center">
-      <h1 class="text-5xl md:text-7xl font-semibold mb-4 tracking-tight">
+      <h1 class="hero-title text-5xl md:text-7xl font-semibold mb-4 tracking-tight opacity-0">
         Akselerasi
       </h1>
-      <p class="text-2xl md:text-3xl font-semibold mb-2">
+      <p class="hero-subtitle text-2xl md:text-3xl font-semibold mb-2 opacity-0">
         Think different. Print better.
       </p>
-      <p class="text-xl md:text-2xl text-white/80 mb-8">
+      <p class="hero-description text-xl md:text-2xl text-black/60 mb-8 opacity-0">
         Professional printing redefined.
       </p>
-      <div class="flex flex-col sm:flex-row gap-4 justify-center mb-16">
+      <div class="hero-buttons flex flex-col sm:flex-row gap-4 justify-center mb-16 opacity-0">
         <a
           href="/catalog"
-          class="inline-block bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-full text-base font-normal transition-colors"
+          class="inline-block bg-black hover:bg-black/80 text-white px-6 py-3 rounded-full text-base font-normal transition-colors"
         >
           Browse catalog
         </a>
         <a
           href="/contact"
-          class="inline-block border-2 border-blue-600 hover:bg-blue-600 text-white px-6 py-3 rounded-full text-base font-normal transition-colors"
+          class="inline-block border-2 border-black hover:bg-black hover:text-white text-black px-6 py-3 rounded-full text-base font-normal transition-colors"
         >
           Get started
         </a>
       </div>
     </div>
-    <div class="w-full aspect-[16/9] max-w-[1200px] mx-auto px-6">
+    <div class="hero-image w-full aspect-[16/9] max-w-[1200px] mx-auto px-6 opacity-0">
       <img
         src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=1400&h=800&fit=crop"
         alt="Professional workspace"
@@ -44,17 +44,17 @@ import BaseLayout from "@/layouts/BaseLayout.astro";
   </section>
 
   <!-- Feature Section 1 -->
-  <section class="py-20 md:py-32 bg-white">
+  <section class="py-20 md:py-32 bg-white border-t border-neutral-200">
     <div class="max-w-[980px] mx-auto px-6">
       <div class="text-center mb-16">
-        <h2 class="text-5xl md:text-6xl font-semibold mb-4 tracking-tight">
+        <h2 class="feature-title text-5xl md:text-6xl font-semibold mb-4 tracking-tight">
           Business Printing
         </h2>
-        <p class="text-xl md:text-2xl text-black/60">
+        <p class="feature-subtitle text-xl md:text-2xl text-black/60">
           Cards that leave an impression.
         </p>
       </div>
-      <div class="aspect-[16/10] rounded-2xl overflow-hidden mb-8">
+      <div class="feature-image aspect-[16/10] rounded-2xl overflow-hidden mb-8">
         <img
           src="https://images.unsplash.com/photo-1589939705384-5185137a7f0f?w=1400&h=800&fit=crop"
           alt="Business cards"
@@ -63,7 +63,7 @@ import BaseLayout from "@/layouts/BaseLayout.astro";
         />
       </div>
       <div class="text-center">
-        <a href="/products" class="text-blue-600 hover:underline text-lg">
+        <a href="/products" class="feature-link text-black hover:underline text-lg font-medium">
           Learn more →
         </a>
       </div>
@@ -71,10 +71,10 @@ import BaseLayout from "@/layouts/BaseLayout.astro";
   </section>
 
   <!-- Feature Section 2 -->
-  <section class="py-20 md:py-32 bg-neutral-50">
+  <section class="py-20 md:py-32 bg-white border-t border-neutral-200">
     <div class="max-w-[980px] mx-auto px-6">
       <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-        <div class="order-2 md:order-1">
+        <div class="order-2 md:order-1 feature-content">
           <h2 class="text-4xl md:text-5xl font-semibold mb-4 tracking-tight">
             Large Format
           </h2>
@@ -84,11 +84,11 @@ import BaseLayout from "@/layouts/BaseLayout.astro";
           <p class="text-lg text-black/70 mb-8">
             From banners to vehicle wraps, we bring your vision to life in stunning detail.
           </p>
-          <a href="/products" class="text-blue-600 hover:underline text-lg">
+          <a href="/products" class="text-black hover:underline text-lg font-medium">
             Explore large format →
           </a>
         </div>
-        <div class="order-1 md:order-2 aspect-square rounded-2xl overflow-hidden">
+        <div class="order-1 md:order-2 feature-image aspect-square rounded-2xl overflow-hidden">
           <img
             src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&h=800&fit=crop"
             alt="Large format printing"
@@ -101,10 +101,10 @@ import BaseLayout from "@/layouts/BaseLayout.astro";
   </section>
 
   <!-- Feature Section 3 -->
-  <section class="py-20 md:py-32 bg-white">
+  <section class="py-20 md:py-32 bg-white border-t border-neutral-200">
     <div class="max-w-[980px] mx-auto px-6">
       <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-        <div class="aspect-square rounded-2xl overflow-hidden">
+        <div class="feature-image aspect-square rounded-2xl overflow-hidden">
           <img
             src="https://images.unsplash.com/photo-1586281380349-632531db7ed4?w=800&h=800&fit=crop"
             alt="Marketing materials"
@@ -112,7 +112,7 @@ import BaseLayout from "@/layouts/BaseLayout.astro";
             loading="lazy"
           />
         </div>
-        <div>
+        <div class="feature-content">
           <h2 class="text-4xl md:text-5xl font-semibold mb-4 tracking-tight">
             Marketing Materials
           </h2>
@@ -122,7 +122,7 @@ import BaseLayout from "@/layouts/BaseLayout.astro";
           <p class="text-lg text-black/70 mb-8">
             Brochures, flyers, and promotional materials that drive results for your business.
           </p>
-          <a href="/products" class="text-blue-600 hover:underline text-lg">
+          <a href="/products" class="text-black hover:underline text-lg font-medium">
             View marketing solutions →
           </a>
         </div>
@@ -131,25 +131,25 @@ import BaseLayout from "@/layouts/BaseLayout.astro";
   </section>
 
   <!-- Services Grid -->
-  <section class="py-20 md:py-32 bg-neutral-50">
+  <section class="py-20 md:py-32 bg-white border-t border-neutral-200">
     <div class="max-w-[980px] mx-auto px-6">
-      <h2 class="text-4xl md:text-5xl font-semibold mb-16 text-center tracking-tight">
+      <h2 class="services-title text-4xl md:text-5xl font-semibold mb-16 text-center tracking-tight">
         Everything you need.
       </h2>
       <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
-        <div class="text-center">
+        <div class="service-item text-center">
           <h3 class="text-2xl font-semibold mb-3">Signage</h3>
           <p class="text-lg text-black/60">
             Indoor and outdoor solutions that guide and inform.
           </p>
         </div>
-        <div class="text-center">
+        <div class="service-item text-center">
           <h3 class="text-2xl font-semibold mb-3">Events</h3>
           <p class="text-lg text-black/60">
             Trade show displays that demand attention.
           </p>
         </div>
-        <div class="text-center">
+        <div class="service-item text-center">
           <h3 class="text-2xl font-semibold mb-3">Promotional</h3>
           <p class="text-lg text-black/60">
             Branded products that keep you top of mind.
@@ -160,24 +160,24 @@ import BaseLayout from "@/layouts/BaseLayout.astro";
   </section>
 
   <!-- CTA Section -->
-  <section class="py-20 md:py-32 bg-white">
+  <section class="py-20 md:py-32 bg-white border-t border-neutral-200">
     <div class="max-w-[980px] mx-auto px-6 text-center">
-      <h2 class="text-4xl md:text-5xl font-semibold mb-6 tracking-tight">
+      <h2 class="cta-title text-4xl md:text-5xl font-semibold mb-6 tracking-tight">
         Ready to get started?
       </h2>
-      <p class="text-xl md:text-2xl text-black/60 mb-10">
+      <p class="cta-subtitle text-xl md:text-2xl text-black/60 mb-10">
         Let's bring your vision to life.
       </p>
-      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+      <div class="cta-buttons flex flex-col sm:flex-row gap-4 justify-center">
         <a
           href="/contact"
-          class="inline-block bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-full text-base font-normal transition-colors"
+          class="inline-block bg-black hover:bg-black/80 text-white px-6 py-3 rounded-full text-base font-normal transition-colors"
         >
           Contact us
         </a>
         <a
           href="/catalog"
-          class="inline-block text-blue-600 hover:underline px-6 py-3 text-base font-normal"
+          class="inline-block text-black hover:underline px-6 py-3 text-base font-normal"
         >
           Browse catalog
         </a>
@@ -185,3 +185,155 @@ import BaseLayout from "@/layouts/BaseLayout.astro";
     </div>
   </section>
 </BaseLayout>
+
+<script>
+  import { gsap } from "gsap";
+  import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+  gsap.registerPlugin(ScrollTrigger);
+
+  // Hero animations
+  const tl = gsap.timeline({ defaults: { ease: "power3.out" } });
+
+  tl.to(".hero-title", {
+    opacity: 1,
+    y: 0,
+    duration: 1,
+    delay: 0.2
+  })
+  .to(".hero-subtitle", {
+    opacity: 1,
+    y: 0,
+    duration: 1
+  }, "-=0.7")
+  .to(".hero-description", {
+    opacity: 1,
+    y: 0,
+    duration: 1
+  }, "-=0.7")
+  .to(".hero-buttons", {
+    opacity: 1,
+    y: 0,
+    duration: 1
+  }, "-=0.7")
+  .to(".hero-image", {
+    opacity: 1,
+    scale: 1,
+    duration: 1.2
+  }, "-=0.5");
+
+  // Feature sections scroll animations
+  gsap.utils.toArray(".feature-title, .services-title, .cta-title").forEach((title) => {
+    gsap.from(title, {
+      scrollTrigger: {
+        trigger: title,
+        start: "top 80%",
+        end: "bottom 20%",
+        toggleActions: "play none none reverse"
+      },
+      opacity: 0,
+      y: 30,
+      duration: 1,
+      ease: "power3.out"
+    });
+  });
+
+  gsap.utils.toArray(".feature-subtitle, .cta-subtitle").forEach((subtitle) => {
+    gsap.from(subtitle, {
+      scrollTrigger: {
+        trigger: subtitle,
+        start: "top 80%",
+        toggleActions: "play none none reverse"
+      },
+      opacity: 0,
+      y: 20,
+      duration: 1,
+      delay: 0.2,
+      ease: "power3.out"
+    });
+  });
+
+  gsap.utils.toArray(".feature-image").forEach((image) => {
+    gsap.from(image, {
+      scrollTrigger: {
+        trigger: image,
+        start: "top 80%",
+        toggleActions: "play none none reverse"
+      },
+      opacity: 0,
+      scale: 0.95,
+      duration: 1.2,
+      ease: "power3.out"
+    });
+  });
+
+  gsap.utils.toArray(".feature-content").forEach((content) => {
+    gsap.from(content, {
+      scrollTrigger: {
+        trigger: content,
+        start: "top 80%",
+        toggleActions: "play none none reverse"
+      },
+      opacity: 0,
+      x: -30,
+      duration: 1,
+      ease: "power3.out"
+    });
+  });
+
+  // Service items stagger
+  gsap.from(".service-item", {
+    scrollTrigger: {
+      trigger: ".service-item",
+      start: "top 80%",
+      toggleActions: "play none none reverse"
+    },
+    opacity: 0,
+    y: 30,
+    stagger: 0.2,
+    duration: 1,
+    ease: "power3.out"
+  });
+
+  // CTA buttons
+  gsap.from(".cta-buttons", {
+    scrollTrigger: {
+      trigger: ".cta-buttons",
+      start: "top 80%",
+      toggleActions: "play none none reverse"
+    },
+    opacity: 0,
+    y: 20,
+    duration: 1,
+    delay: 0.3,
+    ease: "power3.out"
+  });
+
+  // Feature links
+  gsap.utils.toArray(".feature-link").forEach((link) => {
+    gsap.from(link, {
+      scrollTrigger: {
+        trigger: link,
+        start: "top 85%",
+        toggleActions: "play none none reverse"
+      },
+      opacity: 0,
+      duration: 0.8,
+      delay: 0.3,
+      ease: "power3.out"
+    });
+  });
+</script>
+
+<style>
+  .hero-title,
+  .hero-subtitle,
+  .hero-description,
+  .hero-buttons {
+    transform: translateY(20px);
+  }
+
+  .hero-image {
+    transform: scale(0.95);
+  }
+</style>

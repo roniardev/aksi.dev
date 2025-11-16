@@ -42,21 +42,21 @@ const productCategories = [
   <!-- Hero Section -->
   <section class="pt-20 pb-16 md:pt-28 md:pb-24 bg-white">
     <div class="max-w-[980px] mx-auto px-6 text-center">
-      <h1 class="text-5xl md:text-7xl font-semibold mb-4 tracking-tight">
+      <h1 class="page-title text-5xl md:text-7xl font-semibold mb-4 tracking-tight">
         Products
       </h1>
-      <p class="text-xl md:text-2xl text-black/60">
+      <p class="page-subtitle text-xl md:text-2xl text-black/60">
         Everything you need to make your mark.
       </p>
     </div>
   </section>
 
   <!-- Products Grid -->
-  <section class="pb-20 md:pb-32 bg-white">
+  <section class="pb-20 md:pb-32 bg-white border-t border-neutral-200">
     <div class="max-w-[1200px] mx-auto px-6">
       <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-        {productCategories.map((category) => (
-          <div class="group">
+        {productCategories.map((category, index) => (
+          <div class="product-item group">
             <div class="aspect-[4/3] overflow-hidden bg-neutral-100 rounded-2xl mb-6">
               <img
                 src={category.image}
@@ -73,7 +73,7 @@ const productCategories = [
             </p>
             <a
               href="/catalog"
-              class="text-blue-600 hover:underline text-lg"
+              class="text-black hover:underline text-lg font-medium"
             >
               Explore {category.title.toLowerCase()} →
             </a>
@@ -84,25 +84,25 @@ const productCategories = [
   </section>
 
   <!-- Features Section -->
-  <section class="py-20 md:py-32 bg-neutral-50">
+  <section class="py-20 md:py-32 bg-white border-t border-neutral-200">
     <div class="max-w-[980px] mx-auto px-6">
-      <h2 class="text-4xl md:text-5xl font-semibold mb-16 text-center tracking-tight">
+      <h2 class="features-title text-4xl md:text-5xl font-semibold mb-16 text-center tracking-tight">
         Why choose us.
       </h2>
       <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
-        <div class="text-center">
+        <div class="feature-item text-center">
           <h3 class="text-2xl font-semibold mb-3">Premium Quality</h3>
           <p class="text-lg text-black/60">
             State-of-the-art technology meets exceptional materials.
           </p>
         </div>
-        <div class="text-center">
+        <div class="feature-item text-center">
           <h3 class="text-2xl font-semibold mb-3">Fast Turnaround</h3>
           <p class="text-lg text-black/60">
             Quick production without compromising quality.
           </p>
         </div>
-        <div class="text-center">
+        <div class="feature-item text-center">
           <h3 class="text-2xl font-semibold mb-3">Expert Support</h3>
           <p class="text-lg text-black/60">
             Professional guidance every step of the way.
@@ -113,24 +113,24 @@ const productCategories = [
   </section>
 
   <!-- CTA Section -->
-  <section class="py-20 md:py-32 bg-white">
+  <section class="py-20 md:py-32 bg-white border-t border-neutral-200">
     <div class="max-w-[980px] mx-auto px-6 text-center">
-      <h2 class="text-4xl md:text-5xl font-semibold mb-6 tracking-tight">
+      <h2 class="cta-title text-4xl md:text-5xl font-semibold mb-6 tracking-tight">
         Let's create something amazing.
       </h2>
-      <p class="text-xl md:text-2xl text-black/60 mb-10">
+      <p class="cta-subtitle text-xl md:text-2xl text-black/60 mb-10">
         Get started today.
       </p>
-      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+      <div class="cta-buttons flex flex-col sm:flex-row gap-4 justify-center">
         <a
           href="/catalog"
-          class="inline-block bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-full text-base font-normal transition-colors"
+          class="inline-block bg-black hover:bg-black/80 text-white px-6 py-3 rounded-full text-base font-normal transition-colors"
         >
           Browse catalog
         </a>
         <a
           href="/contact"
-          class="inline-block text-blue-600 hover:underline px-6 py-3 text-base font-normal"
+          class="inline-block text-black hover:underline px-6 py-3 text-base font-normal"
         >
           Contact us
         </a>
@@ -138,3 +138,106 @@ const productCategories = [
     </div>
   </section>
 </BaseLayout>
+
+<script>
+  import { gsap } from "gsap";
+  import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+  gsap.registerPlugin(ScrollTrigger);
+
+  // Page title animation
+  gsap.from(".page-title", {
+    opacity: 0,
+    y: 30,
+    duration: 1,
+    delay: 0.2,
+    ease: "power3.out"
+  });
+
+  gsap.from(".page-subtitle", {
+    opacity: 0,
+    y: 20,
+    duration: 1,
+    delay: 0.4,
+    ease: "power3.out"
+  });
+
+  // Product items stagger
+  gsap.from(".product-item", {
+    scrollTrigger: {
+      trigger: ".product-item",
+      start: "top 80%",
+      toggleActions: "play none none reverse"
+    },
+    opacity: 0,
+    y: 40,
+    stagger: 0.2,
+    duration: 1,
+    ease: "power3.out"
+  });
+
+  // Features
+  gsap.from(".features-title", {
+    scrollTrigger: {
+      trigger: ".features-title",
+      start: "top 80%",
+      toggleActions: "play none none reverse"
+    },
+    opacity: 0,
+    y: 30,
+    duration: 1,
+    ease: "power3.out"
+  });
+
+  gsap.from(".feature-item", {
+    scrollTrigger: {
+      trigger: ".feature-item",
+      start: "top 80%",
+      toggleActions: "play none none reverse"
+    },
+    opacity: 0,
+    y: 30,
+    stagger: 0.15,
+    duration: 1,
+    ease: "power3.out"
+  });
+
+  // CTA
+  gsap.from(".cta-title", {
+    scrollTrigger: {
+      trigger: ".cta-title",
+      start: "top 80%",
+      toggleActions: "play none none reverse"
+    },
+    opacity: 0,
+    y: 30,
+    duration: 1,
+    ease: "power3.out"
+  });
+
+  gsap.from(".cta-subtitle", {
+    scrollTrigger: {
+      trigger: ".cta-subtitle",
+      start: "top 80%",
+      toggleActions: "play none none reverse"
+    },
+    opacity: 0,
+    y: 20,
+    duration: 1,
+    delay: 0.2,
+    ease: "power3.out"
+  });
+
+  gsap.from(".cta-buttons", {
+    scrollTrigger: {
+      trigger: ".cta-buttons",
+      start: "top 80%",
+      toggleActions: "play none none reverse"
+    },
+    opacity: 0,
+    y: 20,
+    duration: 1,
+    delay: 0.3,
+    ease: "power3.out"
+  });
+</script>
