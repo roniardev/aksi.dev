@@ -7,125 +7,96 @@ import BaseLayout from "@/layouts/BaseLayout.astro";
   description="Learn more about our company and our commitment"
 >
   <!-- Hero Section -->
-  <section class="pt-20 pb-16 md:pt-28 md:pb-24 bg-blue-50">
-    <div class="max-w-[980px] mx-auto px-6 text-center">
-      <h1 class="page-title text-5xl md:text-7xl font-semibold mb-4 tracking-tight">
-        About Akselerasi
+  <section class="pt-32 pb-16 md:pt-40 md:pb-20 bg-white">
+    <div class="max-w-[980px] mx-auto px-6">
+      <h1 class="page-title text-4xl md:text-6xl font-bold mb-4 tracking-tight">
+        About
       </h1>
-      <p class="page-subtitle text-xl md:text-2xl text-black/60">
-        Quality printing. Exceptional service.
+      <p class="page-subtitle text-lg md:text-xl text-black/60 max-w-[600px]">
+        We love quality printing, precision design, and helping businesses make an impact.
       </p>
     </div>
   </section>
 
-  <!-- Story Section -->
-  <section class="pb-20 md:pb-32 bg-white">
-    <div class="max-w-[980px] mx-auto px-6">
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center mb-24">
-        <div class="story-content">
-          <h2 class="text-4xl md:text-5xl font-semibold mb-6 tracking-tight">
-            Our story
-          </h2>
-          <p class="text-xl text-black/60 leading-relaxed">
-            Founded with a passion for exceptional quality and customer service, we've been serving businesses and individuals with premium printing and graphics solutions.
-          </p>
-        </div>
-        <div class="story-image aspect-square rounded-2xl overflow-hidden">
-          <img
-            src="https://images.unsplash.com/photo-1497366811353-6870744d04b2?w=800&h=800&fit=crop"
-            alt="About us"
-            class="w-full h-full object-cover"
-            loading="lazy"
-          />
+  <!-- Content Section -->
+  <section class="pb-20 md:pb-32 bg-white border-t border-black/5">
+    <div class="max-w-[980px] mx-auto px-6 space-y-12">
+      <div>
+        <h2 class="text-2xl md:text-3xl font-bold mb-3 tracking-tight">
+          Our story
+        </h2>
+        <p class="text-base md:text-lg text-black/60 leading-relaxed">
+          Founded with a passion for exceptional quality and customer service, we've been serving businesses with premium printing and graphics solutions.
+        </p>
+      </div>
+
+      <div>
+        <h2 class="text-2xl md:text-3xl font-bold mb-3 tracking-tight">
+          What we do
+        </h2>
+        <p class="text-base md:text-lg text-black/60 leading-relaxed mb-6">
+          We combine state-of-the-art technology with traditional craftsmanship. From concept to completion, we're committed to bringing your vision to life.
+        </p>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div>
+            <h3 class="text-base font-semibold mb-2">Quality First</h3>
+            <p class="text-sm text-black/60">
+              We never compromise on quality.
+            </p>
+          </div>
+          <div>
+            <h3 class="text-base font-semibold mb-2">Customer Focus</h3>
+            <p class="text-sm text-black/60">
+              Your satisfaction drives us.
+            </p>
+          </div>
+          <div>
+            <h3 class="text-base font-semibold mb-2">Innovation</h3>
+            <p class="text-sm text-black/60">
+              We stay ahead with new tech.
+            </p>
+          </div>
         </div>
       </div>
 
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
-        <div class="approach-image aspect-square rounded-2xl overflow-hidden order-2 md:order-1">
-          <img
-            src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=800&h=800&fit=crop"
-            alt="Our approach"
-            class="w-full h-full object-cover"
-            loading="lazy"
-          />
-        </div>
-        <div class="approach-content order-1 md:order-2">
-          <h2 class="text-4xl md:text-5xl font-semibold mb-6 tracking-tight">
-            Our approach
-          </h2>
-          <p class="text-xl text-black/60 leading-relaxed">
-            We combine state-of-the-art technology with traditional craftsmanship. From concept to completion, we're committed to bringing your vision to life.
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Values Section -->
-  <section class="py-20 md:py-32 bg-amber-50">
-    <div class="max-w-[980px] mx-auto px-6">
-      <h2 class="values-title text-4xl md:text-5xl font-semibold mb-16 text-center tracking-tight">
-        Our values
-      </h2>
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
-        <div class="value-item text-center">
-          <h3 class="text-2xl font-semibold mb-3">Quality First</h3>
-          <p class="text-lg text-black/60">
-            We never compromise. Every project receives our full attention and commitment.
-          </p>
-        </div>
-        <div class="value-item text-center">
-          <h3 class="text-2xl font-semibold mb-3">Customer Focus</h3>
-          <p class="text-lg text-black/60">
-            Your satisfaction drives everything we do. We listen and deliver.
-          </p>
-        </div>
-        <div class="value-item text-center">
-          <h3 class="text-2xl font-semibold mb-3">Innovation</h3>
-          <p class="text-lg text-black/60">
-            We stay ahead with new technologies and techniques.
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Stats Section -->
-  <section class="py-20 md:py-32 bg-green-50">
-    <div class="max-w-[980px] mx-auto px-6">
-      <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
-        <div class="stat-item text-center">
-          <div class="text-5xl md:text-6xl font-semibold mb-2">25+</div>
-          <div class="text-lg text-black/60">Years</div>
-        </div>
-        <div class="stat-item text-center">
-          <div class="text-5xl md:text-6xl font-semibold mb-2">10k+</div>
-          <div class="text-lg text-black/60">Projects</div>
-        </div>
-        <div class="stat-item text-center">
-          <div class="text-5xl md:text-6xl font-semibold mb-2">500+</div>
-          <div class="text-lg text-black/60">Clients</div>
-        </div>
-        <div class="stat-item text-center">
-          <div class="text-5xl md:text-6xl font-semibold mb-2">99%</div>
-          <div class="text-lg text-black/60">Satisfaction</div>
+      <div>
+        <h2 class="text-2xl md:text-3xl font-bold mb-6 tracking-tight">
+          By the numbers
+        </h2>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+          <div>
+            <div class="text-3xl md:text-4xl font-bold mb-1">25+</div>
+            <div class="text-sm text-black/60">Years</div>
+          </div>
+          <div>
+            <div class="text-3xl md:text-4xl font-bold mb-1">10k+</div>
+            <div class="text-sm text-black/60">Projects</div>
+          </div>
+          <div>
+            <div class="text-3xl md:text-4xl font-bold mb-1">500+</div>
+            <div class="text-sm text-black/60">Clients</div>
+          </div>
+          <div>
+            <div class="text-3xl md:text-4xl font-bold mb-1">99%</div>
+            <div class="text-sm text-black/60">Satisfaction</div>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
   <!-- CTA Section -->
-  <section class="py-20 md:py-32 bg-white">
-    <div class="max-w-[980px] mx-auto px-6 text-center">
-      <h2 class="cta-title text-4xl md:text-5xl font-semibold mb-6 tracking-tight">
-        Let's work together.
+  <section class="py-20 md:py-32 bg-white border-t border-black/5">
+    <div class="max-w-[980px] mx-auto px-6">
+      <h2 class="text-2xl md:text-3xl font-bold mb-4 tracking-tight">
+        Let's work together
       </h2>
-      <p class="cta-subtitle text-xl md:text-2xl text-black/60 mb-10">
+      <p class="text-base md:text-lg text-black/60 mb-6">
         Ready to get started?
       </p>
       <a
         href="/contact"
-        class="cta-button inline-block bg-yellow-400 hover:bg-yellow-500 text-black px-6 py-3 rounded-lg text-base font-medium transition-colors"
+        class="inline-block bg-black hover:bg-black/80 text-white px-5 py-2.5 rounded-md text-sm font-medium transition-colors"
       >
         Contact us
       </a>
@@ -135,152 +106,21 @@ import BaseLayout from "@/layouts/BaseLayout.astro";
 
 <script>
   import { gsap } from "gsap";
-  import { ScrollTrigger } from "gsap/ScrollTrigger";
 
-  gsap.registerPlugin(ScrollTrigger);
-
-  // Page title
+  // Simple fade-in on page load
   gsap.from(".page-title", {
     opacity: 0,
-    y: 30,
-    duration: 1,
-    delay: 0.2,
-    ease: "power3.out"
+    y: 10,
+    duration: 0.6,
+    delay: 0.1,
+    ease: "power2.out"
   });
 
   gsap.from(".page-subtitle", {
     opacity: 0,
-    y: 20,
-    duration: 1,
-    delay: 0.4,
-    ease: "power3.out"
-  });
-
-  // Story sections
-  gsap.from(".story-content", {
-    scrollTrigger: {
-      trigger: ".story-content",
-      start: "top 80%",
-      toggleActions: "play none none reverse"
-    },
-    opacity: 0,
-    x: -30,
-    duration: 1,
-    ease: "power3.out"
-  });
-
-  gsap.from(".story-image", {
-    scrollTrigger: {
-      trigger: ".story-image",
-      start: "top 80%",
-      toggleActions: "play none none reverse"
-    },
-    opacity: 0,
-    scale: 0.95,
-    duration: 1.2,
-    ease: "power3.out"
-  });
-
-  gsap.from(".approach-content", {
-    scrollTrigger: {
-      trigger: ".approach-content",
-      start: "top 80%",
-      toggleActions: "play none none reverse"
-    },
-    opacity: 0,
-    x: 30,
-    duration: 1,
-    ease: "power3.out"
-  });
-
-  gsap.from(".approach-image", {
-    scrollTrigger: {
-      trigger: ".approach-image",
-      start: "top 80%",
-      toggleActions: "play none none reverse"
-    },
-    opacity: 0,
-    scale: 0.95,
-    duration: 1.2,
-    ease: "power3.out"
-  });
-
-  // Values
-  gsap.from(".values-title", {
-    scrollTrigger: {
-      trigger: ".values-title",
-      start: "top 80%",
-      toggleActions: "play none none reverse"
-    },
-    opacity: 0,
-    y: 30,
-    duration: 1,
-    ease: "power3.out"
-  });
-
-  gsap.from(".value-item", {
-    scrollTrigger: {
-      trigger: ".value-item",
-      start: "top 80%",
-      toggleActions: "play none none reverse"
-    },
-    opacity: 0,
-    y: 30,
-    stagger: 0.15,
-    duration: 1,
-    ease: "power3.out"
-  });
-
-  // Stats
-  gsap.from(".stat-item", {
-    scrollTrigger: {
-      trigger: ".stat-item",
-      start: "top 80%",
-      toggleActions: "play none none reverse"
-    },
-    opacity: 0,
-    scale: 0.8,
-    stagger: 0.1,
-    duration: 1,
-    ease: "power3.out"
-  });
-
-  // CTA
-  gsap.from(".cta-title", {
-    scrollTrigger: {
-      trigger: ".cta-title",
-      start: "top 80%",
-      toggleActions: "play none none reverse"
-    },
-    opacity: 0,
-    y: 30,
-    duration: 1,
-    ease: "power3.out"
-  });
-
-  gsap.from(".cta-subtitle", {
-    scrollTrigger: {
-      trigger: ".cta-subtitle",
-      start: "top 80%",
-      toggleActions: "play none none reverse"
-    },
-    opacity: 0,
-    y: 20,
-    duration: 1,
+    y: 10,
+    duration: 0.6,
     delay: 0.2,
-    ease: "power3.out"
-  });
-
-  gsap.from(".cta-button", {
-    scrollTrigger: {
-      trigger: ".cta-button",
-      start: "top 80%",
-      toggleActions: "play none none reverse"
-    },
-    opacity: 0,
-    y: 20,
-    duration: 1,
-    delay: 0.3,
-    ease: "power3.out"
+    ease: "power2.out"
   });
 </script>

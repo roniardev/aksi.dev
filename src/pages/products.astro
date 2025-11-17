@@ -21,16 +21,6 @@ const productCategories = [
     title: "Signage",
     description: "Guide, inform, and impress",
     image: "https://images.unsplash.com/photo-1497366754035-f200968a6e72?w=800&h=600&fit=crop"
-  },
-  {
-    title: "Events & Trade Shows",
-    description: "Stand out from the crowd",
-    image: "https://images.unsplash.com/photo-1475721027785-f74eccf877e2?w=800&h=600&fit=crop"
-  },
-  {
-    title: "Promotional",
-    description: "Branded products that last",
-    image: "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&h=600&fit=crop"
   }
 ];
 ---
@@ -40,97 +30,60 @@ const productCategories = [
   description="Discover our full range of printing and graphics products"
 >
   <!-- Hero Section -->
-  <section class="pt-20 pb-16 md:pt-28 md:pb-24 bg-amber-50">
-    <div class="max-w-[980px] mx-auto px-6 text-center">
-      <h1 class="page-title text-5xl md:text-7xl font-semibold mb-4 tracking-tight">
+  <section class="pt-32 pb-16 md:pt-40 md:pb-20 bg-white">
+    <div class="max-w-[980px] mx-auto px-6">
+      <h1 class="page-title text-4xl md:text-6xl font-bold mb-4 tracking-tight">
         Products
       </h1>
-      <p class="page-subtitle text-xl md:text-2xl text-black/60">
+      <p class="page-subtitle text-lg md:text-xl text-black/60">
         Everything you need to make your mark.
       </p>
     </div>
   </section>
 
-  <!-- Products Grid -->
-  <section class="pb-20 md:pb-32 bg-white">
-    <div class="max-w-[1200px] mx-auto px-6">
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-        {productCategories.map((category, index) => (
-          <div class="product-item group">
-            <div class="aspect-[4/3] overflow-hidden bg-neutral-100 rounded-2xl mb-6">
-              <img
-                src={category.image}
-                alt={category.title}
-                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                loading="lazy"
-              />
-            </div>
-            <h3 class="text-3xl md:text-4xl font-semibold mb-3">
-              {category.title}
-            </h3>
-            <p class="text-xl text-black/60 mb-4">
-              {category.description}
-            </p>
-            <a
-              href="/catalog"
-              class="text-yellow-600 hover:text-yellow-700 hover:underline text-lg font-medium"
-            >
-              Explore {category.title.toLowerCase()} →
-            </a>
+  <!-- Products List -->
+  <section class="pb-20 md:pb-32 bg-white border-t border-black/5">
+    <div class="max-w-[980px] mx-auto px-6 space-y-16">
+      {productCategories.map((category) => (
+        <div class="product-item">
+          <h2 class="text-2xl md:text-3xl font-bold mb-2 tracking-tight">
+            {category.title}
+          </h2>
+          <p class="text-base md:text-lg text-black/60 mb-6">
+            {category.description}
+          </p>
+          <div class="aspect-[16/10] overflow-hidden bg-neutral-50 rounded-lg">
+            <img
+              src={category.image}
+              alt={category.title}
+              class="w-full h-full object-cover"
+              loading="lazy"
+            />
           </div>
-        ))}
-      </div>
-    </div>
-  </section>
-
-  <!-- Features Section -->
-  <section class="py-20 md:py-32 bg-green-50">
-    <div class="max-w-[980px] mx-auto px-6">
-      <h2 class="features-title text-4xl md:text-5xl font-semibold mb-16 text-center tracking-tight">
-        Why choose us.
-      </h2>
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
-        <div class="feature-item text-center">
-          <h3 class="text-2xl font-semibold mb-3">Premium Quality</h3>
-          <p class="text-lg text-black/60">
-            State-of-the-art technology meets exceptional materials.
-          </p>
         </div>
-        <div class="feature-item text-center">
-          <h3 class="text-2xl font-semibold mb-3">Fast Turnaround</h3>
-          <p class="text-lg text-black/60">
-            Quick production without compromising quality.
-          </p>
-        </div>
-        <div class="feature-item text-center">
-          <h3 class="text-2xl font-semibold mb-3">Expert Support</h3>
-          <p class="text-lg text-black/60">
-            Professional guidance every step of the way.
-          </p>
-        </div>
-      </div>
+      ))}
     </div>
   </section>
 
   <!-- CTA Section -->
-  <section class="py-20 md:py-32 bg-white">
-    <div class="max-w-[980px] mx-auto px-6 text-center">
-      <h2 class="cta-title text-4xl md:text-5xl font-semibold mb-6 tracking-tight">
-        Let's create something amazing.
+  <section class="py-20 md:py-32 bg-white border-t border-black/5">
+    <div class="max-w-[980px] mx-auto px-6">
+      <h2 class="cta-title text-2xl md:text-3xl font-bold mb-4 tracking-tight">
+        Let's create something amazing
       </h2>
-      <p class="cta-subtitle text-xl md:text-2xl text-black/60 mb-10">
+      <p class="cta-subtitle text-base md:text-lg text-black/60 mb-6">
         Get started today.
       </p>
-      <div class="cta-buttons flex flex-col sm:flex-row gap-4 justify-center">
+      <div class="cta-buttons flex gap-4">
         <a
           href="/catalog"
-          class="inline-block bg-yellow-400 hover:bg-yellow-500 text-black px-6 py-3 rounded-lg text-base font-medium transition-colors"
+          class="inline-block bg-black hover:bg-black/80 text-white px-5 py-2.5 rounded-md text-sm font-medium transition-colors"
         >
-          Browse catalog
+          View catalog
         </a>
         <a
           href="/contact"
-          class="inline-block text-yellow-600 hover:text-yellow-700 hover:underline px-6 py-3 text-base font-medium"
+          class="inline-block border border-black/20 hover:border-black/40 text-black px-5 py-2.5 rounded-md text-sm font-medium transition-colors"
         >
           Contact us
         </a>
@@ -141,103 +94,21 @@ const productCategories = [
 
 <script>
   import { gsap } from "gsap";
-  import { ScrollTrigger } from "gsap/ScrollTrigger";
 
-  gsap.registerPlugin(ScrollTrigger);
-
-  // Page title animation
+  // Simple fade-in on page load
   gsap.from(".page-title", {
     opacity: 0,
-    y: 30,
-    duration: 1,
-    delay: 0.2,
-    ease: "power3.out"
+    y: 10,
+    duration: 0.6,
+    delay: 0.1,
+    ease: "power2.out"
   });
 
   gsap.from(".page-subtitle", {
     opacity: 0,
-    y: 20,
-    duration: 1,
-    delay: 0.4,
-    ease: "power3.out"
-  });
-
-  // Product items stagger
-  gsap.from(".product-item", {
-    scrollTrigger: {
-      trigger: ".product-item",
-      start: "top 80%",
-      toggleActions: "play none none reverse"
-    },
-    opacity: 0,
-    y: 40,
-    stagger: 0.2,
-    duration: 1,
-    ease: "power3.out"
-  });
-
-  // Features
-  gsap.from(".features-title", {
-    scrollTrigger: {
-      trigger: ".features-title",
-      start: "top 80%",
-      toggleActions: "play none none reverse"
-    },
-    opacity: 0,
-    y: 30,
-    duration: 1,
-    ease: "power3.out"
-  });
-
-  gsap.from(".feature-item", {
-    scrollTrigger: {
-      trigger: ".feature-item",
-      start: "top 80%",
-      toggleActions: "play none none reverse"
-    },
-    opacity: 0,
-    y: 30,
-    stagger: 0.15,
-    duration: 1,
-    ease: "power3.out"
-  });
-
-  // CTA
-  gsap.from(".cta-title", {
-    scrollTrigger: {
-      trigger: ".cta-title",
-      start: "top 80%",
-      toggleActions: "play none none reverse"
-    },
-    opacity: 0,
-    y: 30,
-    duration: 1,
-    ease: "power3.out"
-  });
-
-  gsap.from(".cta-subtitle", {
-    scrollTrigger: {
-      trigger: ".cta-subtitle",
-      start: "top 80%",
-      toggleActions: "play none none reverse"
-    },
-    opacity: 0,
-    y: 20,
-    duration: 1,
+    y: 10,
+    duration: 0.6,
     delay: 0.2,
-    ease: "power3.out"
-  });
-
-  gsap.from(".cta-buttons", {
-    scrollTrigger: {
-      trigger: ".cta-buttons",
-      start: "top 80%",
-      toggleActions: "play none none reverse"
-    },
-    opacity: 0,
-    y: 20,
-    duration: 1,
-    delay: 0.3,
-    ease: "power3.out"
+    ease: "power2.out"
   });
 </script>

@@ -7,109 +7,77 @@ import BaseLayout from "@/layouts/BaseLayout.astro";
   description="Get in touch with us"
 >
   <!-- Hero Section -->
-  <section class="pt-20 pb-16 md:pt-28 md:pb-24 bg-blue-50">
-    <div class="max-w-[980px] mx-auto px-6 text-center">
-      <h1 class="page-title text-5xl md:text-7xl font-semibold mb-4 tracking-tight">
-        Get in touch
+  <section class="pt-32 pb-16 md:pt-40 md:pb-20 bg-white">
+    <div class="max-w-[980px] mx-auto px-6">
+      <h1 class="page-title text-4xl md:text-6xl font-bold mb-4 tracking-tight">
+        Contact
       </h1>
-      <p class="page-subtitle text-xl md:text-2xl text-black/60">
+      <p class="page-subtitle text-lg md:text-xl text-black/60">
         We'd love to hear from you.
       </p>
     </div>
   </section>
 
   <!-- Contact Form Section -->
-  <section class="pb-20 md:pb-32 bg-white">
+  <section class="pb-20 md:pb-32 bg-white border-t border-black/5">
     <div class="max-w-[640px] mx-auto px-6">
       <form class="contact-form space-y-6">
         <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
           <div>
-            <label for="first-name" class="block text-base font-medium text-black mb-2">
+            <label for="first-name" class="block text-sm font-medium text-black mb-2">
               First name
             </label>
             <input
               type="text"
               id="first-name"
               name="first-name"
-              class="w-full px-4 py-3 border border-neutral-300 rounded-lg focus:ring-2 focus:ring-yellow-400 focus:border-transparent outline-none transition-all text-base"
+              class="w-full px-3 py-2 border border-neutral-300 rounded-md focus:ring-2 focus:ring-black focus:border-transparent outline-none transition-all text-sm"
               required
             />
           </div>
           <div>
-            <label for="last-name" class="block text-base font-medium text-black mb-2">
+            <label for="last-name" class="block text-sm font-medium text-black mb-2">
               Last name
             </label>
             <input
               type="text"
               id="last-name"
               name="last-name"
-              class="w-full px-4 py-3 border border-neutral-300 rounded-lg focus:ring-2 focus:ring-yellow-400 focus:border-transparent outline-none transition-all text-base"
+              class="w-full px-3 py-2 border border-neutral-300 rounded-md focus:ring-2 focus:ring-black focus:border-transparent outline-none transition-all text-sm"
               required
             />
           </div>
         </div>
 
         <div>
-          <label for="email" class="block text-base font-medium text-black mb-2">
+          <label for="email" class="block text-sm font-medium text-black mb-2">
             Email
           </label>
           <input
             type="email"
             id="email"
             name="email"
-            class="w-full px-4 py-3 border border-neutral-300 rounded-lg focus:ring-2 focus:ring-black focus:border-transparent outline-none transition-all text-base"
+            class="w-full px-3 py-2 border border-neutral-300 rounded-md focus:ring-2 focus:ring-black focus:border-transparent outline-none transition-all text-sm"
             required
           />
         </div>
 
         <div>
-          <label for="phone" class="block text-base font-medium text-black mb-2">
-            Phone
-          </label>
-          <input
-            type="tel"
-            id="phone"
-            name="phone"
-            class="w-full px-4 py-3 border border-neutral-300 rounded-lg focus:ring-2 focus:ring-black focus:border-transparent outline-none transition-all text-base"
-          />
-        </div>
-
-        <div>
-          <label for="service" class="block text-base font-medium text-black mb-2">
-            What can we help you with?
-          </label>
-          <select
-            id="service"
-            name="service"
-            class="w-full px-4 py-3 border border-neutral-300 rounded-lg focus:ring-2 focus:ring-black focus:border-transparent outline-none transition-all text-base"
-          >
-            <option value="">Select a service</option>
-            <option value="business">Business Printing</option>
-            <option value="marketing">Marketing Materials</option>
-            <option value="large-format">Large Format</option>
-            <option value="signage">Signage</option>
-            <option value="events">Events & Trade Shows</option>
-            <option value="promotional">Promotional Products</option>
-            <option value="other">Other</option>
-          </select>
-        </div>
-
-        <div>
-          <label for="message" class="block text-base font-medium text-black mb-2">
+          <label for="message" class="block text-sm font-medium text-black mb-2">
             Message
           </label>
           <textarea
             id="message"
             name="message"
             rows="6"
-            class="w-full px-4 py-3 border border-neutral-300 rounded-lg focus:ring-2 focus:ring-black focus:border-transparent outline-none transition-all resize-none text-base"
+            class="w-full px-3 py-2 border border-neutral-300 rounded-md focus:ring-2 focus:ring-black focus:border-transparent outline-none transition-all resize-none text-sm"
             required
           ></textarea>
         </div>
 
         <button
           type="submit"
-          class="w-full bg-yellow-400 hover:bg-yellow-500 text-black px-6 py-3 rounded-lg text-base font-medium transition-colors"
+          class="w-full bg-black hover:bg-black/80 text-white px-5 py-2.5 rounded-md text-sm font-medium transition-colors"
         >
           Send message
         </button>
@@ -118,72 +86,28 @@ import BaseLayout from "@/layouts/BaseLayout.astro";
   </section>
 
   <!-- Contact Info Section -->
-  <section class="py-20 md:py-32 bg-amber-50">
-    <div class="max-w-[980px] mx-auto px-6">
-      <h2 class="contact-info-title text-4xl md:text-5xl font-semibold mb-16 text-center tracking-tight">
-        Or reach us directly.
-      </h2>
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
-        <div class="contact-info-item text-center">
-          <h3 class="text-xl font-semibold mb-3">Email</h3>
-          <p class="text-lg text-black/60">
-            info@aksi.dev
-          </p>
-        </div>
-        <div class="contact-info-item text-center">
-          <h3 class="text-xl font-semibold mb-3">Phone</h3>
-          <p class="text-lg text-black/60">
-            +1 (555) 123-4567
-          </p>
-        </div>
-        <div class="contact-info-item text-center">
-          <h3 class="text-xl font-semibold mb-3">Location</h3>
-          <p class="text-lg text-black/60">
-            123 Main Street<br />
-            City, State 12345
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- FAQ Section -->
-  <section class="py-20 md:py-32 bg-white">
+  <section class="py-20 md:py-32 bg-white border-t border-black/5">
     <div class="max-w-[640px] mx-auto px-6">
-      <h2 class="faq-title text-4xl md:text-5xl font-semibold mb-12 text-center tracking-tight">
-        Frequently asked.
+      <h2 class="text-2xl md:text-3xl font-bold mb-8 tracking-tight">
+        Or reach us directly
       </h2>
-      <div class="space-y-8">
-        <div class="faq-item">
-          <h3 class="text-xl font-semibold mb-3">
-            What's your turnaround time?
-          </h3>
-          <p class="text-lg text-black/60">
-            Most standard orders are completed within 3-5 business days. Rush services are available.
-          </p>
+      <div class="space-y-4">
+        <div>
+          <div class="text-sm font-semibold mb-1">Email</div>
+          <a href="mailto:info@aksi.dev" class="text-sm text-black/60 hover:text-black">
+            info@aksi.dev
+          </a>
         </div>
-        <div class="faq-item">
-          <h3 class="text-xl font-semibold mb-3">
-            Do you offer design services?
-          </h3>
-          <p class="text-lg text-black/60">
-            Yes. Our design team can help bring your vision to life.
-          </p>
+        <div>
+          <div class="text-sm font-semibold mb-1">Phone</div>
+          <a href="tel:+15551234567" class="text-sm text-black/60 hover:text-black">
+            +1 (555) 123-4567
+          </a>
         </div>
-        <div class="faq-item">
-          <h3 class="text-xl font-semibold mb-3">
-            What file formats do you accept?
-          </h3>
-          <p class="text-lg text-black/60">
-            We accept PDF, AI, EPS, PSD, and high-resolution JPG or PNG files.
-          </p>
-        </div>
-        <div class="faq-item">
-          <h3 class="text-xl font-semibold mb-3">
-            Do you have minimum order quantities?
-          </h3>
-          <p class="text-lg text-black/60">
-            Minimums vary by product. Contact us for specific details.
+        <div>
+          <div class="text-sm font-semibold mb-1">Location</div>
+          <p class="text-sm text-black/60">
+            123 Main Street, City, State 12345
           </p>
         </div>
       </div>
@@ -193,89 +117,21 @@ import BaseLayout from "@/layouts/BaseLayout.astro";
 
 <script>
   import { gsap } from "gsap";
-  import { ScrollTrigger } from "gsap/ScrollTrigger";
 
-  gsap.registerPlugin(ScrollTrigger);
-
-  // Page title
+  // Simple fade-in on page load
   gsap.from(".page-title", {
     opacity: 0,
-    y: 30,
-    duration: 1,
-    delay: 0.2,
-    ease: "power3.out"
+    y: 10,
+    duration: 0.6,
+    delay: 0.1,
+    ease: "power2.out"
   });
 
   gsap.from(".page-subtitle", {
     opacity: 0,
-    y: 20,
-    duration: 1,
-    delay: 0.4,
-    ease: "power3.out"
-  });
-
-  // Contact form
-  gsap.from(".contact-form", {
-    scrollTrigger: {
-      trigger: ".contact-form",
-      start: "top 80%",
-      toggleActions: "play none none reverse"
-    },
-    opacity: 0,
-    y: 40,
-    duration: 1,
-    ease: "power3.out"
-  });
-
-  // Contact info
-  gsap.from(".contact-info-title", {
-    scrollTrigger: {
-      trigger: ".contact-info-title",
-      start: "top 80%",
-      toggleActions: "play none none reverse"
-    },
-    opacity: 0,
-    y: 30,
-    duration: 1,
-    ease: "power3.out"
-  });
-
-  gsap.from(".contact-info-item", {
-    scrollTrigger: {
-      trigger: ".contact-info-item",
-      start: "top 80%",
-      toggleActions: "play none none reverse"
-    },
-    opacity: 0,
-    y: 30,
-    stagger: 0.15,
-    duration: 1,
-    ease: "power3.out"
-  });
-
-  // FAQ
-  gsap.from(".faq-title", {
-    scrollTrigger: {
-      trigger: ".faq-title",
-      start: "top 80%",
-      toggleActions: "play none none reverse"
-    },
-    opacity: 0,
-    y: 30,
-    duration: 1,
-    ease: "power3.out"
-  });
-
-  gsap.from(".faq-item", {
-    scrollTrigger: {
-      trigger: ".faq-item",
-      start: "top 80%",
-      toggleActions: "play none none reverse"
-    },
-    opacity: 0,
-    y: 30,
-    stagger: 0.1,
-    duration: 1,
-    ease: "power3.out"
+    y: 10,
+    duration: 0.6,
+    delay: 0.2,
+    ease: "power2.out"
   });
 </script>

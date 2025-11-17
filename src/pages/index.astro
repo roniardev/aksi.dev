@@ -7,54 +7,41 @@ import BaseLayout from "@/layouts/BaseLayout.astro";
   description="Professional printing and graphics solutions"
 >
   <!-- Hero Section -->
-  <section class="relative bg-white text-black pt-16 pb-24 md:pt-20 md:pb-32">
-    <div class="max-w-[980px] mx-auto px-6 text-center">
-      <h1 class="hero-title text-5xl md:text-7xl font-semibold mb-4 tracking-tight opacity-0">
-        Akselerasi
+  <section class="relative bg-white text-black pt-32 pb-20 md:pt-40 md:pb-24">
+    <div class="max-w-[980px] mx-auto px-6">
+      <h1 class="hero-title text-4xl md:text-6xl font-bold mb-6 tracking-tight">
+        Professional printing and graphics solutions.
       </h1>
-      <p class="hero-subtitle text-2xl md:text-3xl font-semibold mb-2 opacity-0">
-        Think different. Print better.
+      <p class="hero-description text-lg md:text-xl text-black/60 mb-8 max-w-[600px]">
+        We love quality, precision, and helping businesses make an impact.
       </p>
-      <p class="hero-description text-xl md:text-2xl text-black/60 mb-8 opacity-0">
-        Professional printing redefined.
-      </p>
-      <div class="hero-buttons flex flex-col sm:flex-row gap-4 justify-center mb-16 opacity-0">
+      <div class="hero-buttons flex gap-4">
         <a
           href="/catalog"
-          class="inline-block bg-yellow-400 hover:bg-yellow-500 text-black px-6 py-3 rounded-lg text-base font-medium transition-colors"
+          class="inline-block bg-black hover:bg-black/80 text-white px-5 py-2.5 rounded-md text-sm font-medium transition-colors"
         >
-          Browse catalog
+          View catalog
         </a>
         <a
           href="/contact"
-          class="inline-block border-2 border-yellow-400 hover:bg-yellow-400 text-black px-6 py-3 rounded-lg text-base font-medium transition-colors"
+          class="inline-block border border-black/20 hover:border-black/40 text-black px-5 py-2.5 rounded-md text-sm font-medium transition-colors"
         >
-          Get started
+          Contact
         </a>
       </div>
-    </div>
-    <div class="hero-image w-full aspect-[16/9] max-w-[1200px] mx-auto px-6 opacity-0">
-      <img
-        src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=1400&h=800&fit=crop"
-        alt="Professional workspace"
-        class="w-full h-full object-cover rounded-2xl"
-        loading="eager"
-      />
     </div>
   </section>
 
   <!-- Feature Section 1 -->
-  <section class="py-20 md:py-32 bg-blue-50">
+  <section class="py-20 md:py-32 bg-white border-t border-black/5">
     <div class="max-w-[980px] mx-auto px-6">
-      <div class="text-center mb-16">
-        <h2 class="feature-title text-5xl md:text-6xl font-semibold mb-4 tracking-tight">
-          Business Printing
-        </h2>
-        <p class="feature-subtitle text-xl md:text-2xl text-black/60">
-          Cards that leave an impression.
-        </p>
-      </div>
-      <div class="feature-image aspect-[16/10] rounded-2xl overflow-hidden mb-8">
+      <h2 class="feature-title text-3xl md:text-4xl font-bold mb-3 tracking-tight">
+        Business Printing
+      </h2>
+      <p class="feature-subtitle text-base md:text-lg text-black/60 mb-8">
+        Cards that leave an impression.
+      </p>
+      <div class="feature-image aspect-[16/10] rounded-lg overflow-hidden">
         <img
           src="https://images.unsplash.com/photo-1589939705384-5185137a7f0f?w=1400&h=800&fit=crop"
           alt="Business cards"
@@ -62,97 +49,72 @@ import BaseLayout from "@/layouts/BaseLayout.astro";
           loading="lazy"
         />
       </div>
-      <div class="text-center">
-        <a href="/products" class="feature-link text-yellow-600 hover:text-yellow-700 hover:underline text-lg font-medium">
-          Learn more →
-        </a>
-      </div>
     </div>
   </section>
 
   <!-- Feature Section 2 -->
-  <section class="py-20 md:py-32 bg-white">
+  <section class="py-20 md:py-32 bg-white border-t border-black/5">
     <div class="max-w-[980px] mx-auto px-6">
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-        <div class="order-2 md:order-1 feature-content">
-          <h2 class="text-4xl md:text-5xl font-semibold mb-4 tracking-tight">
-            Large Format
-          </h2>
-          <p class="text-xl md:text-2xl text-black/60 mb-6">
-            Go big. Make an impact.
-          </p>
-          <p class="text-lg text-black/70 mb-8">
-            From banners to vehicle wraps, we bring your vision to life in stunning detail.
-          </p>
-          <a href="/products" class="text-yellow-600 hover:text-yellow-700 hover:underline text-lg font-medium">
-            Explore large format →
-          </a>
-        </div>
-        <div class="order-1 md:order-2 feature-image aspect-square rounded-2xl overflow-hidden">
-          <img
-            src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&h=800&fit=crop"
-            alt="Large format printing"
-            class="w-full h-full object-cover"
-            loading="lazy"
-          />
-        </div>
+      <h2 class="feature-title text-3xl md:text-4xl font-bold mb-3 tracking-tight">
+        Large Format
+      </h2>
+      <p class="feature-subtitle text-base md:text-lg text-black/60 mb-8">
+        From banners to vehicle wraps.
+      </p>
+      <div class="feature-image aspect-[16/10] rounded-lg overflow-hidden">
+        <img
+          src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1400&h=800&fit=crop"
+          alt="Large format printing"
+          class="w-full h-full object-cover"
+          loading="lazy"
+        />
       </div>
     </div>
   </section>
 
   <!-- Feature Section 3 -->
-  <section class="py-20 md:py-32 bg-amber-50">
+  <section class="py-20 md:py-32 bg-white border-t border-black/5">
     <div class="max-w-[980px] mx-auto px-6">
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-        <div class="feature-image aspect-square rounded-2xl overflow-hidden">
-          <img
-            src="https://images.unsplash.com/photo-1586281380349-632531db7ed4?w=800&h=800&fit=crop"
-            alt="Marketing materials"
-            class="w-full h-full object-cover"
-            loading="lazy"
-          />
-        </div>
-        <div class="feature-content">
-          <h2 class="text-4xl md:text-5xl font-semibold mb-4 tracking-tight">
-            Marketing Materials
-          </h2>
-          <p class="text-xl md:text-2xl text-black/60 mb-6">
-            Designed to convert.
-          </p>
-          <p class="text-lg text-black/70 mb-8">
-            Brochures, flyers, and promotional materials that drive results for your business.
-          </p>
-          <a href="/products" class="text-yellow-600 hover:text-yellow-700 hover:underline text-lg font-medium">
-            View marketing solutions →
-          </a>
-        </div>
+      <h2 class="feature-title text-3xl md:text-4xl font-bold mb-3 tracking-tight">
+        Marketing Materials
+      </h2>
+      <p class="feature-subtitle text-base md:text-lg text-black/60 mb-8">
+        Brochures, flyers, and promotional materials.
+      </p>
+      <div class="feature-image aspect-[16/10] rounded-lg overflow-hidden">
+        <img
+          src="https://images.unsplash.com/photo-1586281380349-632531db7ed4?w=1400&h=800&fit=crop"
+          alt="Marketing materials"
+          class="w-full h-full object-cover"
+          loading="lazy"
+        />
       </div>
     </div>
   </section>
 
   <!-- Services Grid -->
-  <section class="py-20 md:py-32 bg-green-50">
+  <section class="py-20 md:py-32 bg-white border-t border-black/5">
     <div class="max-w-[980px] mx-auto px-6">
-      <h2 class="services-title text-4xl md:text-5xl font-semibold mb-16 text-center tracking-tight">
-        Everything you need.
+      <h2 class="services-title text-2xl md:text-3xl font-bold mb-12 tracking-tight">
+        What we do
       </h2>
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
-        <div class="service-item text-center">
-          <h3 class="text-2xl font-semibold mb-3">Signage</h3>
-          <p class="text-lg text-black/60">
-            Indoor and outdoor solutions that guide and inform.
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="service-item">
+          <h3 class="text-lg font-semibold mb-2">Signage</h3>
+          <p class="text-sm text-black/60">
+            Indoor and outdoor solutions.
           </p>
         </div>
-        <div class="service-item text-center">
-          <h3 class="text-2xl font-semibold mb-3">Events</h3>
-          <p class="text-lg text-black/60">
-            Trade show displays that demand attention.
+        <div class="service-item">
+          <h3 class="text-lg font-semibold mb-2">Events</h3>
+          <p class="text-sm text-black/60">
+            Trade show displays.
           </p>
         </div>
-        <div class="service-item text-center">
-          <h3 class="text-2xl font-semibold mb-3">Promotional</h3>
-          <p class="text-lg text-black/60">
-            Branded products that keep you top of mind.
+        <div class="service-item">
+          <h3 class="text-lg font-semibold mb-2">Promotional</h3>
+          <p class="text-sm text-black/60">
+            Branded products.
           </p>
         </div>
       </div>
@@ -160,26 +122,26 @@ import BaseLayout from "@/layouts/BaseLayout.astro";
   </section>
 
   <!-- CTA Section -->
-  <section class="py-20 md:py-32 bg-white">
-    <div class="max-w-[980px] mx-auto px-6 text-center">
-      <h2 class="cta-title text-4xl md:text-5xl font-semibold mb-6 tracking-tight">
-        Ready to get started?
+  <section class="py-20 md:py-32 bg-white border-t border-black/5">
+    <div class="max-w-[980px] mx-auto px-6">
+      <h2 class="cta-title text-2xl md:text-3xl font-bold mb-4 tracking-tight">
+        Get started
       </h2>
-      <p class="cta-subtitle text-xl md:text-2xl text-black/60 mb-10">
-        Let's bring your vision to life.
+      <p class="cta-subtitle text-base md:text-lg text-black/60 mb-8">
+        Ready to bring your vision to life?
       </p>
-      <div class="cta-buttons flex flex-col sm:flex-row gap-4 justify-center">
+      <div class="cta-buttons flex gap-4">
         <a
           href="/contact"
-          class="inline-block bg-yellow-400 hover:bg-yellow-500 text-black px-6 py-3 rounded-lg text-base font-medium transition-colors"
+          class="inline-block bg-black hover:bg-black/80 text-white px-5 py-2.5 rounded-md text-sm font-medium transition-colors"
         >
           Contact us
         </a>
         <a
           href="/catalog"
-          class="inline-block text-yellow-600 hover:text-yellow-700 hover:underline px-6 py-3 text-base font-medium"
+          class="inline-block border border-black/20 hover:border-black/40 text-black px-5 py-2.5 rounded-md text-sm font-medium transition-colors"
         >
-          Browse catalog
+          View catalog
         </a>
       </div>
     </div>
@@ -188,152 +150,29 @@ import BaseLayout from "@/layouts/BaseLayout.astro";
 
 <script>
   import { gsap } from "gsap";
-  import { ScrollTrigger } from "gsap/ScrollTrigger";
 
-  gsap.registerPlugin(ScrollTrigger);
-
-  // Hero animations
-  const tl = gsap.timeline({ defaults: { ease: "power3.out" } });
-
-  tl.to(".hero-title", {
-    opacity: 1,
-    y: 0,
-    duration: 1,
-    delay: 0.2
-  })
-  .to(".hero-subtitle", {
-    opacity: 1,
-    y: 0,
-    duration: 1
-  }, "-=0.7")
-  .to(".hero-description", {
-    opacity: 1,
-    y: 0,
-    duration: 1
-  }, "-=0.7")
-  .to(".hero-buttons", {
-    opacity: 1,
-    y: 0,
-    duration: 1
-  }, "-=0.7")
-  .to(".hero-image", {
-    opacity: 1,
-    scale: 1,
-    duration: 1.2
-  }, "-=0.5");
-
-  // Feature sections scroll animations
-  gsap.utils.toArray(".feature-title, .services-title, .cta-title").forEach((title) => {
-    gsap.from(title, {
-      scrollTrigger: {
-        trigger: title,
-        start: "top 80%",
-        end: "bottom 20%",
-        toggleActions: "play none none reverse"
-      },
-      opacity: 0,
-      y: 30,
-      duration: 1,
-      ease: "power3.out"
-    });
-  });
-
-  gsap.utils.toArray(".feature-subtitle, .cta-subtitle").forEach((subtitle) => {
-    gsap.from(subtitle, {
-      scrollTrigger: {
-        trigger: subtitle,
-        start: "top 80%",
-        toggleActions: "play none none reverse"
-      },
-      opacity: 0,
-      y: 20,
-      duration: 1,
-      delay: 0.2,
-      ease: "power3.out"
-    });
-  });
-
-  gsap.utils.toArray(".feature-image").forEach((image) => {
-    gsap.from(image, {
-      scrollTrigger: {
-        trigger: image,
-        start: "top 80%",
-        toggleActions: "play none none reverse"
-      },
-      opacity: 0,
-      scale: 0.95,
-      duration: 1.2,
-      ease: "power3.out"
-    });
-  });
-
-  gsap.utils.toArray(".feature-content").forEach((content) => {
-    gsap.from(content, {
-      scrollTrigger: {
-        trigger: content,
-        start: "top 80%",
-        toggleActions: "play none none reverse"
-      },
-      opacity: 0,
-      x: -30,
-      duration: 1,
-      ease: "power3.out"
-    });
-  });
-
-  // Service items stagger
-  gsap.from(".service-item", {
-    scrollTrigger: {
-      trigger: ".service-item",
-      start: "top 80%",
-      toggleActions: "play none none reverse"
-    },
+  // Simple fade-in animation on page load
+  gsap.from(".hero-title", {
     opacity: 0,
-    y: 30,
-    stagger: 0.2,
-    duration: 1,
-    ease: "power3.out"
+    y: 10,
+    duration: 0.6,
+    delay: 0.1,
+    ease: "power2.out"
   });
 
-  // CTA buttons
-  gsap.from(".cta-buttons", {
-    scrollTrigger: {
-      trigger: ".cta-buttons",
-      start: "top 80%",
-      toggleActions: "play none none reverse"
-    },
+  gsap.from(".hero-description", {
     opacity: 0,
-    y: 20,
-    duration: 1,
+    y: 10,
+    duration: 0.6,
+    delay: 0.2,
+    ease: "power2.out"
+  });
+
+  gsap.from(".hero-buttons", {
+    opacity: 0,
+    y: 10,
+    duration: 0.6,
     delay: 0.3,
-    ease: "power3.out"
-  });
-
-  // Feature links
-  gsap.utils.toArray(".feature-link").forEach((link) => {
-    gsap.from(link, {
-      scrollTrigger: {
-        trigger: link,
-        start: "top 85%",
-        toggleActions: "play none none reverse"
-      },
-      opacity: 0,
-      duration: 0.8,
-      delay: 0.3,
-      ease: "power3.out"
-    });
+    ease: "power2.out"
   });
 </script>
-
-<style>
-  .hero-title,
-  .hero-subtitle,
-  .hero-description,
-  .hero-buttons {
-    transform: translateY(20px);
-  }
-
-  .hero-image {
-    transform: scale(0.95);
-  }
-</style>
