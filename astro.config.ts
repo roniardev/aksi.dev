@@ -19,7 +19,7 @@ export default defineConfig({
     fonts: [
       {
         provider: fontProviders.google(),
-        name: "IBM Plex Sans",
+        name: "IBM Plex Mono",
         cssVariable: "--font-geist",
       },
     ],
